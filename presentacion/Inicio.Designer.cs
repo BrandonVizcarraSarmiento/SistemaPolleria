@@ -85,6 +85,10 @@
             this.lblRol = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.pcbLogoImagen = new System.Windows.Forms.PictureBox();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblhora = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.subMenuCajaPagos.SuspendLayout();
             this.subMenuUsuarioAuditoria.SuspendLayout();
@@ -99,6 +103,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.panelTitulo.SuspendLayout();
             this.pnlUsuario.SuspendLayout();
+            this.pnlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogoImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -864,6 +870,7 @@
             this.btnPagos.Tag = "";
             this.btnPagos.Text = "Pagos";
             this.btnPagos.UseVisualStyleBackColor = false;
+            this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
             // 
             // btnEntregas
             // 
@@ -882,6 +889,7 @@
             this.btnEntregas.Tag = "";
             this.btnEntregas.Text = "Entregas";
             this.btnEntregas.UseVisualStyleBackColor = false;
+            this.btnEntregas.Click += new System.EventHandler(this.btnEntregas_Click);
             // 
             // btnDetallePedido
             // 
@@ -900,6 +908,7 @@
             this.btnDetallePedido.Tag = "";
             this.btnDetallePedido.Text = "Detalles Pedido";
             this.btnDetallePedido.UseVisualStyleBackColor = false;
+            this.btnDetallePedido.Click += new System.EventHandler(this.btnDetallePedido_Click);
             // 
             // btnPedidos
             // 
@@ -918,6 +927,7 @@
             this.btnPedidos.Tag = "";
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.UseVisualStyleBackColor = false;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
             // btnSalir
             // 
@@ -1053,11 +1063,59 @@
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "Sistema Polleria";
             // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.pnlContenedor.Controls.Add(this.lblFecha);
+            this.pnlContenedor.Controls.Add(this.lblhora);
+            this.pnlContenedor.Controls.Add(this.pcbLogoImagen);
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(226, 94);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(882, 680);
+            this.pnlContenedor.TabIndex = 5;
+            // 
+            // pcbLogoImagen
+            // 
+            this.pcbLogoImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pcbLogoImagen.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogoImagen.Image")));
+            this.pcbLogoImagen.Location = new System.Drawing.Point(272, 37);
+            this.pcbLogoImagen.Name = "pcbLogoImagen";
+            this.pcbLogoImagen.Size = new System.Drawing.Size(359, 301);
+            this.pcbLogoImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbLogoImagen.TabIndex = 3;
+            this.pcbLogoImagen.TabStop = false;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.lblFecha.Location = new System.Drawing.Point(422, 414);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(90, 31);
+            this.lblFecha.TabIndex = 6;
+            this.lblFecha.Text = "Fecha";
+            // 
+            // lblhora
+            // 
+            this.lblhora.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblhora.AutoSize = true;
+            this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.lblhora.Location = new System.Drawing.Point(439, 358);
+            this.lblhora.Name = "lblhora";
+            this.lblhora.Size = new System.Drawing.Size(73, 31);
+            this.lblhora.TabIndex = 5;
+            this.lblhora.Text = "Hora";
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 774);
+            this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.pnlMenu);
             this.Name = "Inicio";
@@ -1079,6 +1137,9 @@
             this.panelTitulo.PerformLayout();
             this.pnlUsuario.ResumeLayout(false);
             this.pnlUsuario.PerformLayout();
+            this.pnlContenedor.ResumeLayout(false);
+            this.pnlContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogoImagen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1141,5 +1202,9 @@
         private FontAwesome.Sharp.IconButton btnProovedores;
         private FontAwesome.Sharp.IconButton btnDetalleCompra;
         private FontAwesome.Sharp.IconButton btnCompras;
+        private System.Windows.Forms.Panel pnlContenedor;
+        private System.Windows.Forms.PictureBox pcbLogoImagen;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblhora;
     }
 }

@@ -1,4 +1,9 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using SistemaPolleria.presentacion.gestionPedidosVentas.detallePedido;
+using SistemaPolleria.presentacion.gestionPedidosVentas.entregas;
+using SistemaPolleria.presentacion.gestionPedidosVentas.pagos;
+using SistemaPolleria.presentacion.gestionPedidosVentas.pedidos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +17,8 @@ namespace SistemaPolleria.presentacion
 {
     public partial class Inicio : Form
     {
+        private static IconButton MenuActivo = null;
+        private static Form FormularioActivo = null;
         public Inicio()
         {
             InitializeComponent();
@@ -119,6 +126,54 @@ namespace SistemaPolleria.presentacion
         private void btnCajaPagos_Click(object sender, EventArgs e)
         {
             AlternarSubMenu(subMenuCajaPagos);
+        }
+
+        private void AbrirFormulario(IconButton menu, Form formulario)
+        {
+            lblhora.Visible = false;
+            lblFecha.Visible = false;
+            pcbLogoImagen.Visible = false;
+
+            if (MenuActivo != null)
+            {
+                MenuActivo.BackColor = Color.FromArgb(255, 217, 102); // Restaurar el color del botón anterior
+                MenuActivo.ForeColor = Color.FromArgb(51, 51, 51); // Restaurar el color de texto del botón anterior
+            }
+            menu.BackColor = Color.FromArgb(250, 243, 224);
+            MenuActivo = menu;
+
+            if (FormularioActivo != null)
+            {
+                FormularioActivo.Close();
+            }
+
+            FormularioActivo = formulario;
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
+
+            pnlContenedor.Controls.Add(formulario);
+            formulario.Show();
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmPedidos());
+        }
+
+        private void btnDetallePedido_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmDetallePedido());
+        }
+
+        private void btnEntregas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmEntregas());
+        }
+
+        private void btnPagos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmPagos());
         }
     }
 }
