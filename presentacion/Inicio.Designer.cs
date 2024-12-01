@@ -35,24 +35,24 @@
             this.btnPromocionesActivas = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.btnPromocionesPlatos = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.btnEstadoReserva = new FontAwesome.Sharp.IconButton();
-            this.btnReservasHoy = new FontAwesome.Sharp.IconButton();
-            this.btnClientesFrecuentes = new FontAwesome.Sharp.IconButton();
-            this.btnClientesReservas = new FontAwesome.Sharp.IconButton();
+            this.btnCocina = new FontAwesome.Sharp.IconButton();
+            this.btnInventario = new FontAwesome.Sharp.IconButton();
+            this.btnIngredientesPlato = new FontAwesome.Sharp.IconButton();
+            this.btnIngredientes = new FontAwesome.Sharp.IconButton();
+            this.btnPlatos = new FontAwesome.Sharp.IconButton();
+            this.btnPlatosCocina = new FontAwesome.Sharp.IconButton();
             this.subMenuGestionEmpleados = new System.Windows.Forms.Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnEvaluciones = new FontAwesome.Sharp.IconButton();
             this.btnAsistencias = new FontAwesome.Sharp.IconButton();
-            this.btnEmpleadosActivos = new FontAwesome.Sharp.IconButton();
+            this.btnTurnos = new FontAwesome.Sharp.IconButton();
+            this.btnHorarios = new FontAwesome.Sharp.IconButton();
+            this.btnEmpleados = new FontAwesome.Sharp.IconButton();
             this.btnGestionEmpleados = new FontAwesome.Sharp.IconButton();
             this.subMenuInventarios = new System.Windows.Forms.Panel();
-            this.btnInventarioGeneral = new FontAwesome.Sharp.IconButton();
-            this.btnUltimasCompras = new FontAwesome.Sharp.IconButton();
-            this.btnIngredientesCriticos = new FontAwesome.Sharp.IconButton();
-            this.btnInventarios = new FontAwesome.Sharp.IconButton();
+            this.btnOrdenesMesa = new FontAwesome.Sharp.IconButton();
+            this.btnReservas = new FontAwesome.Sharp.IconButton();
+            this.btnMesas = new FontAwesome.Sharp.IconButton();
+            this.btnMesasReservas = new FontAwesome.Sharp.IconButton();
             this.subMenuResumenGeneral = new System.Windows.Forms.Panel();
             this.btnPagos = new FontAwesome.Sharp.IconButton();
             this.btnEntregas = new FontAwesome.Sharp.IconButton();
@@ -68,27 +68,27 @@
             this.lblRol = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.btnGestionClientes = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.btnFinanzas = new FontAwesome.Sharp.IconButton();
+            this.btnComprasProveedores = new FontAwesome.Sharp.IconButton();
             this.subMenuFinanzas = new System.Windows.Forms.Panel();
-            this.btnIngresosRecientes = new FontAwesome.Sharp.IconButton();
-            this.btnPagosProveedores = new FontAwesome.Sharp.IconButton();
-            this.btnEstadoCaja = new FontAwesome.Sharp.IconButton();
-            this.btnSeguridadAutoridad = new FontAwesome.Sharp.IconButton();
+            this.btnProovedores = new FontAwesome.Sharp.IconButton();
+            this.btnDetalleCompra = new FontAwesome.Sharp.IconButton();
+            this.btnCompras = new FontAwesome.Sharp.IconButton();
+            this.btnPromocionesEventos = new FontAwesome.Sharp.IconButton();
             this.subMenuSeguridad = new System.Windows.Forms.Panel();
-            this.btnUsuarioActivo = new FontAwesome.Sharp.IconButton();
-            this.btnSesionReciente = new FontAwesome.Sharp.IconButton();
-            this.btnActividadesSistema = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.btnEventos = new FontAwesome.Sharp.IconButton();
+            this.btnTiposEventos = new FontAwesome.Sharp.IconButton();
+            this.btnPromociones = new FontAwesome.Sharp.IconButton();
+            this.btnUsuarioAuditoria = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.iconButton11 = new FontAwesome.Sharp.IconButton();
+            this.btnAuditoria = new FontAwesome.Sharp.IconButton();
+            this.btnUsuarios = new FontAwesome.Sharp.IconButton();
             this.iconButton12 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
-            this.iconButton14 = new FontAwesome.Sharp.IconButton();
+            this.btnPago = new FontAwesome.Sharp.IconButton();
+            this.btnCaja = new FontAwesome.Sharp.IconButton();
             this.pnlMenu.SuspendLayout();
             this.subMenuClientesReservas.SuspendLayout();
             this.subMenuPromocionesPlatos.SuspendLayout();
@@ -113,19 +113,19 @@
             this.pnlMenu.Controls.Add(this.panel4);
             this.pnlMenu.Controls.Add(this.iconButton12);
             this.pnlMenu.Controls.Add(this.panel3);
-            this.pnlMenu.Controls.Add(this.iconButton9);
+            this.pnlMenu.Controls.Add(this.btnUsuarioAuditoria);
             this.pnlMenu.Controls.Add(this.subMenuSeguridad);
-            this.pnlMenu.Controls.Add(this.btnSeguridadAutoridad);
+            this.pnlMenu.Controls.Add(this.btnPromocionesEventos);
             this.pnlMenu.Controls.Add(this.subMenuFinanzas);
-            this.pnlMenu.Controls.Add(this.btnFinanzas);
+            this.pnlMenu.Controls.Add(this.btnComprasProveedores);
             this.pnlMenu.Controls.Add(this.panel1);
-            this.pnlMenu.Controls.Add(this.iconButton7);
+            this.pnlMenu.Controls.Add(this.btnGestionClientes);
             this.pnlMenu.Controls.Add(this.subMenuClientesReservas);
-            this.pnlMenu.Controls.Add(this.btnClientesReservas);
+            this.pnlMenu.Controls.Add(this.btnPlatosCocina);
             this.pnlMenu.Controls.Add(this.subMenuGestionEmpleados);
             this.pnlMenu.Controls.Add(this.btnGestionEmpleados);
             this.pnlMenu.Controls.Add(this.subMenuInventarios);
-            this.pnlMenu.Controls.Add(this.btnInventarios);
+            this.pnlMenu.Controls.Add(this.btnMesasReservas);
             this.pnlMenu.Controls.Add(this.subMenuResumenGeneral);
             this.pnlMenu.Controls.Add(this.btnSalir);
             this.pnlMenu.Controls.Add(this.btnPedidosVentas);
@@ -141,11 +141,11 @@
             this.subMenuClientesReservas.Controls.Add(this.subMenuPromocionesPlatos);
             this.subMenuClientesReservas.Controls.Add(this.iconButton6);
             this.subMenuClientesReservas.Controls.Add(this.btnPromocionesPlatos);
-            this.subMenuClientesReservas.Controls.Add(this.iconButton4);
-            this.subMenuClientesReservas.Controls.Add(this.iconButton3);
-            this.subMenuClientesReservas.Controls.Add(this.btnEstadoReserva);
-            this.subMenuClientesReservas.Controls.Add(this.btnReservasHoy);
-            this.subMenuClientesReservas.Controls.Add(this.btnClientesFrecuentes);
+            this.subMenuClientesReservas.Controls.Add(this.btnCocina);
+            this.subMenuClientesReservas.Controls.Add(this.btnInventario);
+            this.subMenuClientesReservas.Controls.Add(this.btnIngredientesPlato);
+            this.subMenuClientesReservas.Controls.Add(this.btnIngredientes);
+            this.subMenuClientesReservas.Controls.Add(this.btnPlatos);
             this.subMenuClientesReservas.Dock = System.Windows.Forms.DockStyle.Top;
             this.subMenuClientesReservas.Location = new System.Drawing.Point(0, 608);
             this.subMenuClientesReservas.Name = "subMenuClientesReservas";
@@ -223,166 +223,130 @@
             this.btnPromocionesPlatos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPromocionesPlatos.UseVisualStyleBackColor = true;
             // 
-            // iconButton4
+            // btnCocina
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(0, 124);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(209, 31);
-            this.iconButton4.TabIndex = 5;
-            this.iconButton4.Tag = "";
-            this.iconButton4.Text = "Cocina";
-            this.iconButton4.UseVisualStyleBackColor = false;
+            this.btnCocina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnCocina.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCocina.FlatAppearance.BorderSize = 0;
+            this.btnCocina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCocina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCocina.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCocina.IconColor = System.Drawing.Color.Black;
+            this.btnCocina.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCocina.Location = new System.Drawing.Point(0, 124);
+            this.btnCocina.Name = "btnCocina";
+            this.btnCocina.Size = new System.Drawing.Size(209, 31);
+            this.btnCocina.TabIndex = 5;
+            this.btnCocina.Tag = "";
+            this.btnCocina.Text = "Cocina";
+            this.btnCocina.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // btnInventario
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(0, 93);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(209, 31);
-            this.iconButton3.TabIndex = 4;
-            this.iconButton3.Tag = "";
-            this.iconButton3.Text = "Inventario";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.btnInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInventario.FlatAppearance.BorderSize = 0;
+            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnInventario.IconColor = System.Drawing.Color.Black;
+            this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInventario.Location = new System.Drawing.Point(0, 93);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Size = new System.Drawing.Size(209, 31);
+            this.btnInventario.TabIndex = 4;
+            this.btnInventario.Tag = "";
+            this.btnInventario.Text = "Inventario";
+            this.btnInventario.UseVisualStyleBackColor = false;
             // 
-            // btnEstadoReserva
+            // btnIngredientesPlato
             // 
-            this.btnEstadoReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnEstadoReserva.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEstadoReserva.FlatAppearance.BorderSize = 0;
-            this.btnEstadoReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstadoReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnEstadoReserva.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnEstadoReserva.IconColor = System.Drawing.Color.Black;
-            this.btnEstadoReserva.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEstadoReserva.Location = new System.Drawing.Point(0, 62);
-            this.btnEstadoReserva.Name = "btnEstadoReserva";
-            this.btnEstadoReserva.Size = new System.Drawing.Size(209, 31);
-            this.btnEstadoReserva.TabIndex = 3;
-            this.btnEstadoReserva.Tag = "";
-            this.btnEstadoReserva.Text = "Ingredientes Por Plato";
-            this.btnEstadoReserva.UseVisualStyleBackColor = false;
+            this.btnIngredientesPlato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnIngredientesPlato.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIngredientesPlato.FlatAppearance.BorderSize = 0;
+            this.btnIngredientesPlato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngredientesPlato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnIngredientesPlato.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnIngredientesPlato.IconColor = System.Drawing.Color.Black;
+            this.btnIngredientesPlato.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnIngredientesPlato.Location = new System.Drawing.Point(0, 62);
+            this.btnIngredientesPlato.Name = "btnIngredientesPlato";
+            this.btnIngredientesPlato.Size = new System.Drawing.Size(209, 31);
+            this.btnIngredientesPlato.TabIndex = 3;
+            this.btnIngredientesPlato.Tag = "";
+            this.btnIngredientesPlato.Text = "Ingredientes Por Plato";
+            this.btnIngredientesPlato.UseVisualStyleBackColor = false;
             // 
-            // btnReservasHoy
+            // btnIngredientes
             // 
-            this.btnReservasHoy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnReservasHoy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReservasHoy.FlatAppearance.BorderSize = 0;
-            this.btnReservasHoy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReservasHoy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnReservasHoy.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnReservasHoy.IconColor = System.Drawing.Color.Black;
-            this.btnReservasHoy.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnReservasHoy.Location = new System.Drawing.Point(0, 31);
-            this.btnReservasHoy.Name = "btnReservasHoy";
-            this.btnReservasHoy.Size = new System.Drawing.Size(209, 31);
-            this.btnReservasHoy.TabIndex = 2;
-            this.btnReservasHoy.Tag = "";
-            this.btnReservasHoy.Text = "Ingredientes";
-            this.btnReservasHoy.UseVisualStyleBackColor = false;
+            this.btnIngredientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnIngredientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIngredientes.FlatAppearance.BorderSize = 0;
+            this.btnIngredientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngredientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnIngredientes.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnIngredientes.IconColor = System.Drawing.Color.Black;
+            this.btnIngredientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnIngredientes.Location = new System.Drawing.Point(0, 31);
+            this.btnIngredientes.Name = "btnIngredientes";
+            this.btnIngredientes.Size = new System.Drawing.Size(209, 31);
+            this.btnIngredientes.TabIndex = 2;
+            this.btnIngredientes.Tag = "";
+            this.btnIngredientes.Text = "Ingredientes";
+            this.btnIngredientes.UseVisualStyleBackColor = false;
             // 
-            // btnClientesFrecuentes
+            // btnPlatos
             // 
-            this.btnClientesFrecuentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnClientesFrecuentes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnClientesFrecuentes.FlatAppearance.BorderSize = 0;
-            this.btnClientesFrecuentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientesFrecuentes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnClientesFrecuentes.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnClientesFrecuentes.IconColor = System.Drawing.Color.Black;
-            this.btnClientesFrecuentes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClientesFrecuentes.Location = new System.Drawing.Point(0, 0);
-            this.btnClientesFrecuentes.Name = "btnClientesFrecuentes";
-            this.btnClientesFrecuentes.Size = new System.Drawing.Size(209, 31);
-            this.btnClientesFrecuentes.TabIndex = 1;
-            this.btnClientesFrecuentes.Tag = "";
-            this.btnClientesFrecuentes.Text = "Platos";
-            this.btnClientesFrecuentes.UseVisualStyleBackColor = false;
+            this.btnPlatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnPlatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlatos.FlatAppearance.BorderSize = 0;
+            this.btnPlatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlatos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPlatos.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnPlatos.IconColor = System.Drawing.Color.Black;
+            this.btnPlatos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPlatos.Location = new System.Drawing.Point(0, 0);
+            this.btnPlatos.Name = "btnPlatos";
+            this.btnPlatos.Size = new System.Drawing.Size(209, 31);
+            this.btnPlatos.TabIndex = 1;
+            this.btnPlatos.Tag = "";
+            this.btnPlatos.Text = "Platos";
+            this.btnPlatos.UseVisualStyleBackColor = false;
             // 
-            // btnClientesReservas
+            // btnPlatosCocina
             // 
-            this.btnClientesReservas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnClientesReservas.FlatAppearance.BorderSize = 0;
-            this.btnClientesReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientesReservas.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientesReservas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnClientesReservas.IconChar = FontAwesome.Sharp.IconChar.Medapps;
-            this.btnClientesReservas.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnClientesReservas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClientesReservas.IconSize = 30;
-            this.btnClientesReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientesReservas.Location = new System.Drawing.Point(0, 571);
-            this.btnClientesReservas.Name = "btnClientesReservas";
-            this.btnClientesReservas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnClientesReservas.Size = new System.Drawing.Size(209, 37);
-            this.btnClientesReservas.TabIndex = 11;
-            this.btnClientesReservas.Tag = "Clientes y Reservas";
-            this.btnClientesReservas.Text = "   Gestión de Platos y Cocina";
-            this.btnClientesReservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClientesReservas.UseVisualStyleBackColor = true;
+            this.btnPlatosCocina.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlatosCocina.FlatAppearance.BorderSize = 0;
+            this.btnPlatosCocina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlatosCocina.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlatosCocina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPlatosCocina.IconChar = FontAwesome.Sharp.IconChar.Medapps;
+            this.btnPlatosCocina.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPlatosCocina.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPlatosCocina.IconSize = 30;
+            this.btnPlatosCocina.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlatosCocina.Location = new System.Drawing.Point(0, 571);
+            this.btnPlatosCocina.Name = "btnPlatosCocina";
+            this.btnPlatosCocina.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPlatosCocina.Size = new System.Drawing.Size(209, 37);
+            this.btnPlatosCocina.TabIndex = 11;
+            this.btnPlatosCocina.Tag = "   Gestión de Platos y Cocina";
+            this.btnPlatosCocina.Text = "   Gestión de Platos y Cocina";
+            this.btnPlatosCocina.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlatosCocina.UseVisualStyleBackColor = true;
             // 
             // subMenuGestionEmpleados
             // 
-            this.subMenuGestionEmpleados.Controls.Add(this.iconButton2);
-            this.subMenuGestionEmpleados.Controls.Add(this.iconButton1);
             this.subMenuGestionEmpleados.Controls.Add(this.btnEvaluciones);
             this.subMenuGestionEmpleados.Controls.Add(this.btnAsistencias);
-            this.subMenuGestionEmpleados.Controls.Add(this.btnEmpleadosActivos);
+            this.subMenuGestionEmpleados.Controls.Add(this.btnTurnos);
+            this.subMenuGestionEmpleados.Controls.Add(this.btnHorarios);
+            this.subMenuGestionEmpleados.Controls.Add(this.btnEmpleados);
             this.subMenuGestionEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.subMenuGestionEmpleados.Location = new System.Drawing.Point(0, 421);
             this.subMenuGestionEmpleados.Name = "subMenuGestionEmpleados";
             this.subMenuGestionEmpleados.Size = new System.Drawing.Size(209, 150);
             this.subMenuGestionEmpleados.TabIndex = 14;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(0, 124);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(209, 31);
-            this.iconButton2.TabIndex = 5;
-            this.iconButton2.Tag = "";
-            this.iconButton2.Text = "Evaluaciones";
-            this.iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(0, 93);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(209, 31);
-            this.iconButton1.TabIndex = 4;
-            this.iconButton1.Tag = "";
-            this.iconButton1.Text = "Asistencias";
-            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // btnEvaluciones
             // 
@@ -394,12 +358,12 @@
             this.btnEvaluciones.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnEvaluciones.IconColor = System.Drawing.Color.Black;
             this.btnEvaluciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEvaluciones.Location = new System.Drawing.Point(0, 62);
+            this.btnEvaluciones.Location = new System.Drawing.Point(0, 124);
             this.btnEvaluciones.Name = "btnEvaluciones";
             this.btnEvaluciones.Size = new System.Drawing.Size(209, 31);
-            this.btnEvaluciones.TabIndex = 3;
+            this.btnEvaluciones.TabIndex = 5;
             this.btnEvaluciones.Tag = "";
-            this.btnEvaluciones.Text = "Turnos";
+            this.btnEvaluciones.Text = "Evaluaciones";
             this.btnEvaluciones.UseVisualStyleBackColor = false;
             // 
             // btnAsistencias
@@ -412,31 +376,67 @@
             this.btnAsistencias.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnAsistencias.IconColor = System.Drawing.Color.Black;
             this.btnAsistencias.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAsistencias.Location = new System.Drawing.Point(0, 31);
+            this.btnAsistencias.Location = new System.Drawing.Point(0, 93);
             this.btnAsistencias.Name = "btnAsistencias";
             this.btnAsistencias.Size = new System.Drawing.Size(209, 31);
-            this.btnAsistencias.TabIndex = 2;
+            this.btnAsistencias.TabIndex = 4;
             this.btnAsistencias.Tag = "";
-            this.btnAsistencias.Text = "Horarios";
+            this.btnAsistencias.Text = "Asistencias";
             this.btnAsistencias.UseVisualStyleBackColor = false;
             // 
-            // btnEmpleadosActivos
+            // btnTurnos
             // 
-            this.btnEmpleadosActivos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnEmpleadosActivos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEmpleadosActivos.FlatAppearance.BorderSize = 0;
-            this.btnEmpleadosActivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpleadosActivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnEmpleadosActivos.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnEmpleadosActivos.IconColor = System.Drawing.Color.Black;
-            this.btnEmpleadosActivos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEmpleadosActivos.Location = new System.Drawing.Point(0, 0);
-            this.btnEmpleadosActivos.Name = "btnEmpleadosActivos";
-            this.btnEmpleadosActivos.Size = new System.Drawing.Size(209, 31);
-            this.btnEmpleadosActivos.TabIndex = 1;
-            this.btnEmpleadosActivos.Tag = "";
-            this.btnEmpleadosActivos.Text = "Empleados";
-            this.btnEmpleadosActivos.UseVisualStyleBackColor = false;
+            this.btnTurnos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnTurnos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTurnos.FlatAppearance.BorderSize = 0;
+            this.btnTurnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTurnos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnTurnos.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnTurnos.IconColor = System.Drawing.Color.Black;
+            this.btnTurnos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTurnos.Location = new System.Drawing.Point(0, 62);
+            this.btnTurnos.Name = "btnTurnos";
+            this.btnTurnos.Size = new System.Drawing.Size(209, 31);
+            this.btnTurnos.TabIndex = 3;
+            this.btnTurnos.Tag = "";
+            this.btnTurnos.Text = "Turnos";
+            this.btnTurnos.UseVisualStyleBackColor = false;
+            // 
+            // btnHorarios
+            // 
+            this.btnHorarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnHorarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHorarios.FlatAppearance.BorderSize = 0;
+            this.btnHorarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHorarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnHorarios.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnHorarios.IconColor = System.Drawing.Color.Black;
+            this.btnHorarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHorarios.Location = new System.Drawing.Point(0, 31);
+            this.btnHorarios.Name = "btnHorarios";
+            this.btnHorarios.Size = new System.Drawing.Size(209, 31);
+            this.btnHorarios.TabIndex = 2;
+            this.btnHorarios.Tag = "";
+            this.btnHorarios.Text = "Horarios";
+            this.btnHorarios.UseVisualStyleBackColor = false;
+            // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnEmpleados.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnEmpleados.IconColor = System.Drawing.Color.Black;
+            this.btnEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 0);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(209, 31);
+            this.btnEmpleados.TabIndex = 1;
+            this.btnEmpleados.Tag = "";
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = false;
             // 
             // btnGestionEmpleados
             // 
@@ -462,90 +462,90 @@
             // 
             // subMenuInventarios
             // 
-            this.subMenuInventarios.Controls.Add(this.btnInventarioGeneral);
-            this.subMenuInventarios.Controls.Add(this.btnUltimasCompras);
-            this.subMenuInventarios.Controls.Add(this.btnIngredientesCriticos);
+            this.subMenuInventarios.Controls.Add(this.btnOrdenesMesa);
+            this.subMenuInventarios.Controls.Add(this.btnReservas);
+            this.subMenuInventarios.Controls.Add(this.btnMesas);
             this.subMenuInventarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.subMenuInventarios.Location = new System.Drawing.Point(0, 288);
             this.subMenuInventarios.Name = "subMenuInventarios";
             this.subMenuInventarios.Size = new System.Drawing.Size(209, 96);
             this.subMenuInventarios.TabIndex = 5;
             // 
-            // btnInventarioGeneral
+            // btnOrdenesMesa
             // 
-            this.btnInventarioGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnInventarioGeneral.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventarioGeneral.FlatAppearance.BorderSize = 0;
-            this.btnInventarioGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventarioGeneral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnInventarioGeneral.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnInventarioGeneral.IconColor = System.Drawing.Color.Black;
-            this.btnInventarioGeneral.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnInventarioGeneral.Location = new System.Drawing.Point(0, 62);
-            this.btnInventarioGeneral.Name = "btnInventarioGeneral";
-            this.btnInventarioGeneral.Size = new System.Drawing.Size(209, 34);
-            this.btnInventarioGeneral.TabIndex = 3;
-            this.btnInventarioGeneral.Tag = "";
-            this.btnInventarioGeneral.Text = "Ordenes Mesa";
-            this.btnInventarioGeneral.UseVisualStyleBackColor = false;
+            this.btnOrdenesMesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnOrdenesMesa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrdenesMesa.FlatAppearance.BorderSize = 0;
+            this.btnOrdenesMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenesMesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnOrdenesMesa.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnOrdenesMesa.IconColor = System.Drawing.Color.Black;
+            this.btnOrdenesMesa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOrdenesMesa.Location = new System.Drawing.Point(0, 62);
+            this.btnOrdenesMesa.Name = "btnOrdenesMesa";
+            this.btnOrdenesMesa.Size = new System.Drawing.Size(209, 34);
+            this.btnOrdenesMesa.TabIndex = 3;
+            this.btnOrdenesMesa.Tag = "";
+            this.btnOrdenesMesa.Text = "Ordenes Mesa";
+            this.btnOrdenesMesa.UseVisualStyleBackColor = false;
             // 
-            // btnUltimasCompras
+            // btnReservas
             // 
-            this.btnUltimasCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnUltimasCompras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUltimasCompras.FlatAppearance.BorderSize = 0;
-            this.btnUltimasCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUltimasCompras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnUltimasCompras.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnUltimasCompras.IconColor = System.Drawing.Color.Black;
-            this.btnUltimasCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUltimasCompras.Location = new System.Drawing.Point(0, 31);
-            this.btnUltimasCompras.Name = "btnUltimasCompras";
-            this.btnUltimasCompras.Size = new System.Drawing.Size(209, 31);
-            this.btnUltimasCompras.TabIndex = 2;
-            this.btnUltimasCompras.Tag = "";
-            this.btnUltimasCompras.Text = "Reservas";
-            this.btnUltimasCompras.UseVisualStyleBackColor = false;
+            this.btnReservas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnReservas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReservas.FlatAppearance.BorderSize = 0;
+            this.btnReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReservas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnReservas.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnReservas.IconColor = System.Drawing.Color.Black;
+            this.btnReservas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReservas.Location = new System.Drawing.Point(0, 31);
+            this.btnReservas.Name = "btnReservas";
+            this.btnReservas.Size = new System.Drawing.Size(209, 31);
+            this.btnReservas.TabIndex = 2;
+            this.btnReservas.Tag = "";
+            this.btnReservas.Text = "Reservas";
+            this.btnReservas.UseVisualStyleBackColor = false;
             // 
-            // btnIngredientesCriticos
+            // btnMesas
             // 
-            this.btnIngredientesCriticos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnIngredientesCriticos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIngredientesCriticos.FlatAppearance.BorderSize = 0;
-            this.btnIngredientesCriticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngredientesCriticos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnIngredientesCriticos.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnIngredientesCriticos.IconColor = System.Drawing.Color.Black;
-            this.btnIngredientesCriticos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnIngredientesCriticos.Location = new System.Drawing.Point(0, 0);
-            this.btnIngredientesCriticos.Name = "btnIngredientesCriticos";
-            this.btnIngredientesCriticos.Size = new System.Drawing.Size(209, 31);
-            this.btnIngredientesCriticos.TabIndex = 1;
-            this.btnIngredientesCriticos.Tag = "";
-            this.btnIngredientesCriticos.Text = "Mesas";
-            this.btnIngredientesCriticos.UseVisualStyleBackColor = false;
+            this.btnMesas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnMesas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMesas.FlatAppearance.BorderSize = 0;
+            this.btnMesas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMesas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnMesas.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnMesas.IconColor = System.Drawing.Color.Black;
+            this.btnMesas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMesas.Location = new System.Drawing.Point(0, 0);
+            this.btnMesas.Name = "btnMesas";
+            this.btnMesas.Size = new System.Drawing.Size(209, 31);
+            this.btnMesas.TabIndex = 1;
+            this.btnMesas.Tag = "";
+            this.btnMesas.Text = "Mesas";
+            this.btnMesas.UseVisualStyleBackColor = false;
             // 
-            // btnInventarios
+            // btnMesasReservas
             // 
-            this.btnInventarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventarios.FlatAppearance.BorderSize = 0;
-            this.btnInventarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventarios.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnInventarios.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
-            this.btnInventarios.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnInventarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnInventarios.IconSize = 30;
-            this.btnInventarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventarios.Location = new System.Drawing.Point(0, 251);
-            this.btnInventarios.Name = "btnInventarios";
-            this.btnInventarios.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInventarios.Size = new System.Drawing.Size(209, 37);
-            this.btnInventarios.TabIndex = 5;
-            this.btnInventarios.Tag = "Inventarios";
-            this.btnInventarios.Text = "   Gestión de Mesas y Reservas";
-            this.btnInventarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnInventarios.UseVisualStyleBackColor = true;
+            this.btnMesasReservas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMesasReservas.FlatAppearance.BorderSize = 0;
+            this.btnMesasReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMesasReservas.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMesasReservas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnMesasReservas.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.btnMesasReservas.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnMesasReservas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMesasReservas.IconSize = 30;
+            this.btnMesasReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMesasReservas.Location = new System.Drawing.Point(0, 251);
+            this.btnMesasReservas.Name = "btnMesasReservas";
+            this.btnMesasReservas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMesasReservas.Size = new System.Drawing.Size(209, 37);
+            this.btnMesasReservas.TabIndex = 5;
+            this.btnMesasReservas.Tag = "   Gestión de Mesas y Reservas";
+            this.btnMesasReservas.Text = "   Gestión de Mesas y Reservas";
+            this.btnMesasReservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMesasReservas.UseVisualStyleBackColor = true;
             // 
             // subMenuResumenGeneral
             // 
@@ -763,27 +763,27 @@
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "Sistema Polleria";
             // 
-            // iconButton7
+            // btnGestionClientes
             // 
-            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
-            this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 30;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 765);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton7.Size = new System.Drawing.Size(209, 37);
-            this.iconButton7.TabIndex = 16;
-            this.iconButton7.Tag = "Promociones y Platos";
-            this.iconButton7.Text = "   Gestión de Clientes";
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = true;
+            this.btnGestionClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGestionClientes.FlatAppearance.BorderSize = 0;
+            this.btnGestionClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionClientes.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnGestionClientes.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            this.btnGestionClientes.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnGestionClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGestionClientes.IconSize = 30;
+            this.btnGestionClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestionClientes.Location = new System.Drawing.Point(0, 765);
+            this.btnGestionClientes.Name = "btnGestionClientes";
+            this.btnGestionClientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnGestionClientes.Size = new System.Drawing.Size(209, 37);
+            this.btnGestionClientes.TabIndex = 16;
+            this.btnGestionClientes.Tag = "   Gestión de Clientes";
+            this.btnGestionClientes.Text = "   Gestión de Clientes";
+            this.btnGestionClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGestionClientes.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -812,246 +812,247 @@
             this.iconButton8.Text = "Clientes";
             this.iconButton8.UseVisualStyleBackColor = false;
             // 
-            // btnFinanzas
+            // btnComprasProveedores
             // 
-            this.btnFinanzas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFinanzas.FlatAppearance.BorderSize = 0;
-            this.btnFinanzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinanzas.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinanzas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnFinanzas.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
-            this.btnFinanzas.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnFinanzas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFinanzas.IconSize = 30;
-            this.btnFinanzas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFinanzas.Location = new System.Drawing.Point(0, 844);
-            this.btnFinanzas.Name = "btnFinanzas";
-            this.btnFinanzas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnFinanzas.Size = new System.Drawing.Size(209, 37);
-            this.btnFinanzas.TabIndex = 18;
-            this.btnFinanzas.Tag = "Finanzas";
-            this.btnFinanzas.Text = "   Gestión de Compras y Proveedores";
-            this.btnFinanzas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFinanzas.UseVisualStyleBackColor = true;
+            this.btnComprasProveedores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnComprasProveedores.FlatAppearance.BorderSize = 0;
+            this.btnComprasProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnComprasProveedores.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComprasProveedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnComprasProveedores.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            this.btnComprasProveedores.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnComprasProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnComprasProveedores.IconSize = 30;
+            this.btnComprasProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnComprasProveedores.Location = new System.Drawing.Point(0, 844);
+            this.btnComprasProveedores.Name = "btnComprasProveedores";
+            this.btnComprasProveedores.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnComprasProveedores.Size = new System.Drawing.Size(209, 37);
+            this.btnComprasProveedores.TabIndex = 18;
+            this.btnComprasProveedores.Tag = "   Gestión de Compras y Proveedores";
+            this.btnComprasProveedores.Text = "   Gestión de Compras y Proveedores";
+            this.btnComprasProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnComprasProveedores.UseVisualStyleBackColor = true;
             // 
             // subMenuFinanzas
             // 
-            this.subMenuFinanzas.Controls.Add(this.btnIngresosRecientes);
-            this.subMenuFinanzas.Controls.Add(this.btnPagosProveedores);
-            this.subMenuFinanzas.Controls.Add(this.btnEstadoCaja);
+            this.subMenuFinanzas.Controls.Add(this.btnProovedores);
+            this.subMenuFinanzas.Controls.Add(this.btnDetalleCompra);
+            this.subMenuFinanzas.Controls.Add(this.btnCompras);
             this.subMenuFinanzas.Dock = System.Windows.Forms.DockStyle.Top;
             this.subMenuFinanzas.Location = new System.Drawing.Point(0, 881);
             this.subMenuFinanzas.Name = "subMenuFinanzas";
             this.subMenuFinanzas.Size = new System.Drawing.Size(209, 96);
             this.subMenuFinanzas.TabIndex = 19;
             // 
-            // btnIngresosRecientes
+            // btnProovedores
             // 
-            this.btnIngresosRecientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnIngresosRecientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIngresosRecientes.FlatAppearance.BorderSize = 0;
-            this.btnIngresosRecientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresosRecientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnIngresosRecientes.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnIngresosRecientes.IconColor = System.Drawing.Color.Black;
-            this.btnIngresosRecientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnIngresosRecientes.Location = new System.Drawing.Point(0, 62);
-            this.btnIngresosRecientes.Name = "btnIngresosRecientes";
-            this.btnIngresosRecientes.Size = new System.Drawing.Size(209, 31);
-            this.btnIngresosRecientes.TabIndex = 3;
-            this.btnIngresosRecientes.Tag = "";
-            this.btnIngresosRecientes.Text = "Proveedores";
-            this.btnIngresosRecientes.UseVisualStyleBackColor = false;
+            this.btnProovedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnProovedores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProovedores.FlatAppearance.BorderSize = 0;
+            this.btnProovedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProovedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnProovedores.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnProovedores.IconColor = System.Drawing.Color.Black;
+            this.btnProovedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProovedores.Location = new System.Drawing.Point(0, 62);
+            this.btnProovedores.Name = "btnProovedores";
+            this.btnProovedores.Size = new System.Drawing.Size(209, 31);
+            this.btnProovedores.TabIndex = 3;
+            this.btnProovedores.Tag = "";
+            this.btnProovedores.Text = "Proveedores";
+            this.btnProovedores.UseVisualStyleBackColor = false;
             // 
-            // btnPagosProveedores
+            // btnDetalleCompra
             // 
-            this.btnPagosProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnPagosProveedores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPagosProveedores.FlatAppearance.BorderSize = 0;
-            this.btnPagosProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagosProveedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnPagosProveedores.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnPagosProveedores.IconColor = System.Drawing.Color.Black;
-            this.btnPagosProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPagosProveedores.Location = new System.Drawing.Point(0, 31);
-            this.btnPagosProveedores.Name = "btnPagosProveedores";
-            this.btnPagosProveedores.Size = new System.Drawing.Size(209, 31);
-            this.btnPagosProveedores.TabIndex = 2;
-            this.btnPagosProveedores.Tag = "";
-            this.btnPagosProveedores.Text = "DetallesCompra";
-            this.btnPagosProveedores.UseVisualStyleBackColor = false;
+            this.btnDetalleCompra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnDetalleCompra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDetalleCompra.FlatAppearance.BorderSize = 0;
+            this.btnDetalleCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetalleCompra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnDetalleCompra.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnDetalleCompra.IconColor = System.Drawing.Color.Black;
+            this.btnDetalleCompra.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDetalleCompra.Location = new System.Drawing.Point(0, 31);
+            this.btnDetalleCompra.Name = "btnDetalleCompra";
+            this.btnDetalleCompra.Size = new System.Drawing.Size(209, 31);
+            this.btnDetalleCompra.TabIndex = 2;
+            this.btnDetalleCompra.Tag = "";
+            this.btnDetalleCompra.Text = "DetallesCompra";
+            this.btnDetalleCompra.UseVisualStyleBackColor = false;
             // 
-            // btnEstadoCaja
+            // btnCompras
             // 
-            this.btnEstadoCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnEstadoCaja.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEstadoCaja.FlatAppearance.BorderSize = 0;
-            this.btnEstadoCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstadoCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnEstadoCaja.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnEstadoCaja.IconColor = System.Drawing.Color.Black;
-            this.btnEstadoCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEstadoCaja.Location = new System.Drawing.Point(0, 0);
-            this.btnEstadoCaja.Name = "btnEstadoCaja";
-            this.btnEstadoCaja.Size = new System.Drawing.Size(209, 31);
-            this.btnEstadoCaja.TabIndex = 1;
-            this.btnEstadoCaja.Tag = "";
-            this.btnEstadoCaja.Text = "Compras";
-            this.btnEstadoCaja.UseVisualStyleBackColor = false;
+            this.btnCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnCompras.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCompras.FlatAppearance.BorderSize = 0;
+            this.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCompras.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCompras.IconColor = System.Drawing.Color.Black;
+            this.btnCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCompras.Location = new System.Drawing.Point(0, 0);
+            this.btnCompras.Name = "btnCompras";
+            this.btnCompras.Size = new System.Drawing.Size(209, 31);
+            this.btnCompras.TabIndex = 1;
+            this.btnCompras.Tag = "";
+            this.btnCompras.Text = "Compras";
+            this.btnCompras.UseVisualStyleBackColor = false;
             // 
-            // btnSeguridadAutoridad
+            // btnPromocionesEventos
             // 
-            this.btnSeguridadAutoridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSeguridadAutoridad.FlatAppearance.BorderSize = 0;
-            this.btnSeguridadAutoridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeguridadAutoridad.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeguridadAutoridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnSeguridadAutoridad.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
-            this.btnSeguridadAutoridad.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnSeguridadAutoridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSeguridadAutoridad.IconSize = 30;
-            this.btnSeguridadAutoridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguridadAutoridad.Location = new System.Drawing.Point(0, 977);
-            this.btnSeguridadAutoridad.Name = "btnSeguridadAutoridad";
-            this.btnSeguridadAutoridad.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSeguridadAutoridad.Size = new System.Drawing.Size(209, 37);
-            this.btnSeguridadAutoridad.TabIndex = 11;
-            this.btnSeguridadAutoridad.Tag = "Seguridad y Auditoría";
-            this.btnSeguridadAutoridad.Text = "   Promociones y Eventos";
-            this.btnSeguridadAutoridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSeguridadAutoridad.UseVisualStyleBackColor = true;
+            this.btnPromocionesEventos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPromocionesEventos.FlatAppearance.BorderSize = 0;
+            this.btnPromocionesEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPromocionesEventos.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPromocionesEventos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPromocionesEventos.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.btnPromocionesEventos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPromocionesEventos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPromocionesEventos.IconSize = 30;
+            this.btnPromocionesEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPromocionesEventos.Location = new System.Drawing.Point(0, 977);
+            this.btnPromocionesEventos.Name = "btnPromocionesEventos";
+            this.btnPromocionesEventos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPromocionesEventos.Size = new System.Drawing.Size(209, 37);
+            this.btnPromocionesEventos.TabIndex = 11;
+            this.btnPromocionesEventos.Tag = "   Promociones y Eventos";
+            this.btnPromocionesEventos.Text = "   Promociones y Eventos";
+            this.btnPromocionesEventos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPromocionesEventos.UseVisualStyleBackColor = true;
             // 
             // subMenuSeguridad
             // 
-            this.subMenuSeguridad.Controls.Add(this.btnUsuarioActivo);
-            this.subMenuSeguridad.Controls.Add(this.btnSesionReciente);
-            this.subMenuSeguridad.Controls.Add(this.btnActividadesSistema);
+            this.subMenuSeguridad.Controls.Add(this.btnEventos);
+            this.subMenuSeguridad.Controls.Add(this.btnTiposEventos);
+            this.subMenuSeguridad.Controls.Add(this.btnPromociones);
             this.subMenuSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
             this.subMenuSeguridad.Location = new System.Drawing.Point(0, 1014);
             this.subMenuSeguridad.Name = "subMenuSeguridad";
             this.subMenuSeguridad.Size = new System.Drawing.Size(209, 96);
             this.subMenuSeguridad.TabIndex = 20;
             // 
-            // btnUsuarioActivo
+            // btnEventos
             // 
-            this.btnUsuarioActivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnUsuarioActivo.FlatAppearance.BorderSize = 0;
-            this.btnUsuarioActivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarioActivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnUsuarioActivo.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnUsuarioActivo.IconColor = System.Drawing.Color.Black;
-            this.btnUsuarioActivo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUsuarioActivo.Location = new System.Drawing.Point(0, 62);
-            this.btnUsuarioActivo.Name = "btnUsuarioActivo";
-            this.btnUsuarioActivo.Size = new System.Drawing.Size(197, 31);
-            this.btnUsuarioActivo.TabIndex = 3;
-            this.btnUsuarioActivo.Tag = "";
-            this.btnUsuarioActivo.Text = "Eventos";
-            this.btnUsuarioActivo.UseVisualStyleBackColor = false;
+            this.btnEventos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnEventos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEventos.FlatAppearance.BorderSize = 0;
+            this.btnEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEventos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnEventos.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnEventos.IconColor = System.Drawing.Color.Black;
+            this.btnEventos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEventos.Location = new System.Drawing.Point(0, 62);
+            this.btnEventos.Name = "btnEventos";
+            this.btnEventos.Size = new System.Drawing.Size(209, 31);
+            this.btnEventos.TabIndex = 3;
+            this.btnEventos.Tag = "";
+            this.btnEventos.Text = "Eventos";
+            this.btnEventos.UseVisualStyleBackColor = false;
             // 
-            // btnSesionReciente
+            // btnTiposEventos
             // 
-            this.btnSesionReciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnSesionReciente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSesionReciente.FlatAppearance.BorderSize = 0;
-            this.btnSesionReciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSesionReciente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnSesionReciente.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnSesionReciente.IconColor = System.Drawing.Color.Black;
-            this.btnSesionReciente.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSesionReciente.Location = new System.Drawing.Point(0, 31);
-            this.btnSesionReciente.Name = "btnSesionReciente";
-            this.btnSesionReciente.Size = new System.Drawing.Size(209, 31);
-            this.btnSesionReciente.TabIndex = 2;
-            this.btnSesionReciente.Tag = "";
-            this.btnSesionReciente.Text = "TiposEventos";
-            this.btnSesionReciente.UseVisualStyleBackColor = false;
+            this.btnTiposEventos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnTiposEventos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTiposEventos.FlatAppearance.BorderSize = 0;
+            this.btnTiposEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTiposEventos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnTiposEventos.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnTiposEventos.IconColor = System.Drawing.Color.Black;
+            this.btnTiposEventos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTiposEventos.Location = new System.Drawing.Point(0, 31);
+            this.btnTiposEventos.Name = "btnTiposEventos";
+            this.btnTiposEventos.Size = new System.Drawing.Size(209, 31);
+            this.btnTiposEventos.TabIndex = 2;
+            this.btnTiposEventos.Tag = "";
+            this.btnTiposEventos.Text = "TiposEventos";
+            this.btnTiposEventos.UseVisualStyleBackColor = false;
             // 
-            // btnActividadesSistema
+            // btnPromociones
             // 
-            this.btnActividadesSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnActividadesSistema.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnActividadesSistema.FlatAppearance.BorderSize = 0;
-            this.btnActividadesSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActividadesSistema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnActividadesSistema.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnActividadesSistema.IconColor = System.Drawing.Color.Black;
-            this.btnActividadesSistema.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnActividadesSistema.Location = new System.Drawing.Point(0, 0);
-            this.btnActividadesSistema.Name = "btnActividadesSistema";
-            this.btnActividadesSistema.Size = new System.Drawing.Size(209, 31);
-            this.btnActividadesSistema.TabIndex = 1;
-            this.btnActividadesSistema.Tag = "";
-            this.btnActividadesSistema.Text = "Promociones";
-            this.btnActividadesSistema.UseVisualStyleBackColor = false;
+            this.btnPromociones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnPromociones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPromociones.FlatAppearance.BorderSize = 0;
+            this.btnPromociones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPromociones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPromociones.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnPromociones.IconColor = System.Drawing.Color.Black;
+            this.btnPromociones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPromociones.Location = new System.Drawing.Point(0, 0);
+            this.btnPromociones.Name = "btnPromociones";
+            this.btnPromociones.Size = new System.Drawing.Size(209, 31);
+            this.btnPromociones.TabIndex = 1;
+            this.btnPromociones.Tag = "";
+            this.btnPromociones.Text = "Promociones";
+            this.btnPromociones.UseVisualStyleBackColor = false;
             // 
-            // iconButton9
+            // btnUsuarioAuditoria
             // 
-            this.iconButton9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton9.FlatAppearance.BorderSize = 0;
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
-            this.iconButton9.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 30;
-            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(0, 1110);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton9.Size = new System.Drawing.Size(209, 37);
-            this.iconButton9.TabIndex = 21;
-            this.iconButton9.Tag = "Seguridad y Auditoría";
-            this.iconButton9.Text = "   Usuarios y Auditoría";
-            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton9.UseVisualStyleBackColor = true;
+            this.btnUsuarioAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarioAuditoria.FlatAppearance.BorderSize = 0;
+            this.btnUsuarioAuditoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarioAuditoria.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarioAuditoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnUsuarioAuditoria.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.btnUsuarioAuditoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnUsuarioAuditoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUsuarioAuditoria.IconSize = 30;
+            this.btnUsuarioAuditoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarioAuditoria.Location = new System.Drawing.Point(0, 1110);
+            this.btnUsuarioAuditoria.Name = "btnUsuarioAuditoria";
+            this.btnUsuarioAuditoria.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnUsuarioAuditoria.Size = new System.Drawing.Size(209, 37);
+            this.btnUsuarioAuditoria.TabIndex = 21;
+            this.btnUsuarioAuditoria.Tag = "   Usuarios y Auditoría";
+            this.btnUsuarioAuditoria.Text = "   Usuarios y Auditoría";
+            this.btnUsuarioAuditoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarioAuditoria.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.iconButton10);
-            this.panel3.Controls.Add(this.iconButton11);
+            this.panel3.Controls.Add(this.btnAuditoria);
+            this.panel3.Controls.Add(this.btnUsuarios);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 1147);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(209, 62);
             this.panel3.TabIndex = 21;
             // 
-            // iconButton10
+            // btnAuditoria
             // 
-            this.iconButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton10.FlatAppearance.BorderSize = 0;
-            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton10.IconColor = System.Drawing.Color.Black;
-            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.Location = new System.Drawing.Point(0, 31);
-            this.iconButton10.Name = "iconButton10";
-            this.iconButton10.Size = new System.Drawing.Size(209, 31);
-            this.iconButton10.TabIndex = 2;
-            this.iconButton10.Tag = "";
-            this.iconButton10.Text = "Auditoria";
-            this.iconButton10.UseVisualStyleBackColor = false;
+            this.btnAuditoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAuditoria.FlatAppearance.BorderSize = 0;
+            this.btnAuditoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuditoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnAuditoria.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnAuditoria.IconColor = System.Drawing.Color.Black;
+            this.btnAuditoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAuditoria.Location = new System.Drawing.Point(0, 31);
+            this.btnAuditoria.Name = "btnAuditoria";
+            this.btnAuditoria.Size = new System.Drawing.Size(209, 31);
+            this.btnAuditoria.TabIndex = 2;
+            this.btnAuditoria.Tag = "";
+            this.btnAuditoria.Text = "Auditoria";
+            this.btnAuditoria.UseVisualStyleBackColor = false;
             // 
-            // iconButton11
+            // btnUsuarios
             // 
-            this.iconButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton11.FlatAppearance.BorderSize = 0;
-            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton11.IconColor = System.Drawing.Color.Black;
-            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton11.Location = new System.Drawing.Point(0, 0);
-            this.iconButton11.Name = "iconButton11";
-            this.iconButton11.Size = new System.Drawing.Size(209, 31);
-            this.iconButton11.TabIndex = 1;
-            this.iconButton11.Tag = "";
-            this.iconButton11.Text = "Usuarios";
-            this.iconButton11.UseVisualStyleBackColor = false;
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnUsuarios.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnUsuarios.IconColor = System.Drawing.Color.Black;
+            this.btnUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(209, 31);
+            this.btnUsuarios.TabIndex = 1;
+            this.btnUsuarios.Tag = "";
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             // 
             // iconButton12
             // 
@@ -1070,56 +1071,56 @@
             this.iconButton12.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton12.Size = new System.Drawing.Size(209, 37);
             this.iconButton12.TabIndex = 22;
-            this.iconButton12.Tag = "Seguridad y Auditoría";
+            this.iconButton12.Tag = "   Caja y pagos";
             this.iconButton12.Text = "   Caja y pagos";
             this.iconButton12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton12.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.iconButton13);
-            this.panel4.Controls.Add(this.iconButton14);
+            this.panel4.Controls.Add(this.btnPago);
+            this.panel4.Controls.Add(this.btnCaja);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 1246);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(209, 64);
             this.panel4.TabIndex = 23;
             // 
-            // iconButton13
+            // btnPago
             // 
-            this.iconButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton13.FlatAppearance.BorderSize = 0;
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton13.IconColor = System.Drawing.Color.Black;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.Location = new System.Drawing.Point(0, 31);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Size = new System.Drawing.Size(209, 31);
-            this.iconButton13.TabIndex = 2;
-            this.iconButton13.Tag = "";
-            this.iconButton13.Text = "Pagos";
-            this.iconButton13.UseVisualStyleBackColor = false;
+            this.btnPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnPago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPago.FlatAppearance.BorderSize = 0;
+            this.btnPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPago.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnPago.IconColor = System.Drawing.Color.Black;
+            this.btnPago.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPago.Location = new System.Drawing.Point(0, 31);
+            this.btnPago.Name = "btnPago";
+            this.btnPago.Size = new System.Drawing.Size(209, 31);
+            this.btnPago.TabIndex = 2;
+            this.btnPago.Tag = "";
+            this.btnPago.Text = "Pagos";
+            this.btnPago.UseVisualStyleBackColor = false;
             // 
-            // iconButton14
+            // btnCaja
             // 
-            this.iconButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.iconButton14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton14.FlatAppearance.BorderSize = 0;
-            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton14.IconColor = System.Drawing.Color.Black;
-            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton14.Location = new System.Drawing.Point(0, 0);
-            this.iconButton14.Name = "iconButton14";
-            this.iconButton14.Size = new System.Drawing.Size(209, 31);
-            this.iconButton14.TabIndex = 1;
-            this.iconButton14.Tag = "";
-            this.iconButton14.Text = "Caja";
-            this.iconButton14.UseVisualStyleBackColor = false;
+            this.btnCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnCaja.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCaja.FlatAppearance.BorderSize = 0;
+            this.btnCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCaja.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCaja.IconColor = System.Drawing.Color.Black;
+            this.btnCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCaja.Location = new System.Drawing.Point(0, 0);
+            this.btnCaja.Name = "btnCaja";
+            this.btnCaja.Size = new System.Drawing.Size(209, 31);
+            this.btnCaja.TabIndex = 1;
+            this.btnCaja.Tag = "";
+            this.btnCaja.Text = "Caja";
+            this.btnCaja.UseVisualStyleBackColor = false;
             // 
             // Inicio
             // 
@@ -1166,53 +1167,53 @@
         private System.Windows.Forms.Label lblTitulo;
         private FontAwesome.Sharp.IconButton btnGestionEmpleados;
         private System.Windows.Forms.Panel subMenuInventarios;
-        private FontAwesome.Sharp.IconButton btnInventarioGeneral;
-        private FontAwesome.Sharp.IconButton btnUltimasCompras;
-        private FontAwesome.Sharp.IconButton btnIngredientesCriticos;
-        private FontAwesome.Sharp.IconButton btnInventarios;
+        private FontAwesome.Sharp.IconButton btnOrdenesMesa;
+        private FontAwesome.Sharp.IconButton btnReservas;
+        private FontAwesome.Sharp.IconButton btnMesas;
+        private FontAwesome.Sharp.IconButton btnMesasReservas;
         private System.Windows.Forms.Panel subMenuResumenGeneral;
         private FontAwesome.Sharp.IconButton btnPagos;
         private FontAwesome.Sharp.IconButton btnEntregas;
         private FontAwesome.Sharp.IconButton btnDetallePedido;
         private FontAwesome.Sharp.IconButton btnPedidos;
         private FontAwesome.Sharp.IconButton btnPedidosVentas;
-        private FontAwesome.Sharp.IconButton btnClientesReservas;
+        private FontAwesome.Sharp.IconButton btnPlatosCocina;
         private System.Windows.Forms.Panel subMenuGestionEmpleados;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton btnEvaluciones;
         private FontAwesome.Sharp.IconButton btnAsistencias;
-        private FontAwesome.Sharp.IconButton btnEmpleadosActivos;
+        private FontAwesome.Sharp.IconButton btnTurnos;
+        private FontAwesome.Sharp.IconButton btnHorarios;
+        private FontAwesome.Sharp.IconButton btnEmpleados;
         private System.Windows.Forms.Panel subMenuClientesReservas;
         private FontAwesome.Sharp.IconButton btnPromocionesPlatos;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton btnEstadoReserva;
-        private FontAwesome.Sharp.IconButton btnReservasHoy;
-        private FontAwesome.Sharp.IconButton btnClientesFrecuentes;
+        private FontAwesome.Sharp.IconButton btnCocina;
+        private FontAwesome.Sharp.IconButton btnInventario;
+        private FontAwesome.Sharp.IconButton btnIngredientesPlato;
+        private FontAwesome.Sharp.IconButton btnIngredientes;
+        private FontAwesome.Sharp.IconButton btnPlatos;
         private System.Windows.Forms.Panel subMenuPromocionesPlatos;
         private FontAwesome.Sharp.IconButton btnPromocionesActivas;
         private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton btnFinanzas;
+        private FontAwesome.Sharp.IconButton btnGestionClientes;
+        private FontAwesome.Sharp.IconButton btnComprasProveedores;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton iconButton8;
         private System.Windows.Forms.Panel panel4;
-        private FontAwesome.Sharp.IconButton iconButton13;
-        private FontAwesome.Sharp.IconButton iconButton14;
+        private FontAwesome.Sharp.IconButton btnPago;
+        private FontAwesome.Sharp.IconButton btnCaja;
         private FontAwesome.Sharp.IconButton iconButton12;
         private System.Windows.Forms.Panel panel3;
-        private FontAwesome.Sharp.IconButton iconButton10;
-        private FontAwesome.Sharp.IconButton iconButton11;
-        private FontAwesome.Sharp.IconButton iconButton9;
+        private FontAwesome.Sharp.IconButton btnAuditoria;
+        private FontAwesome.Sharp.IconButton btnUsuarios;
+        private FontAwesome.Sharp.IconButton btnUsuarioAuditoria;
         private System.Windows.Forms.Panel subMenuSeguridad;
-        private FontAwesome.Sharp.IconButton btnUsuarioActivo;
-        private FontAwesome.Sharp.IconButton btnSesionReciente;
-        private FontAwesome.Sharp.IconButton btnActividadesSistema;
-        private FontAwesome.Sharp.IconButton btnSeguridadAutoridad;
+        private FontAwesome.Sharp.IconButton btnEventos;
+        private FontAwesome.Sharp.IconButton btnTiposEventos;
+        private FontAwesome.Sharp.IconButton btnPromociones;
+        private FontAwesome.Sharp.IconButton btnPromocionesEventos;
         private System.Windows.Forms.Panel subMenuFinanzas;
-        private FontAwesome.Sharp.IconButton btnIngresosRecientes;
-        private FontAwesome.Sharp.IconButton btnPagosProveedores;
-        private FontAwesome.Sharp.IconButton btnEstadoCaja;
+        private FontAwesome.Sharp.IconButton btnProovedores;
+        private FontAwesome.Sharp.IconButton btnDetalleCompra;
+        private FontAwesome.Sharp.IconButton btnCompras;
     }
 }
