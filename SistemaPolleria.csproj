@@ -53,6 +53,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\EntidadAsistencia.cs" />
+    <Compile Include="datos\DatosAsistencia.cs" />
+    <Compile Include="negocios\NegociosAsistencia.cs" />
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.cs">
       <SubType>Form</SubType>
     </Compile>
