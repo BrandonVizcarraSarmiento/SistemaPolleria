@@ -30,13 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.subMenuGestionEquipos = new System.Windows.Forms.Panel();
+            this.btnMantenimiento = new FontAwesome.Sharp.IconButton();
+            this.btnEquipos = new FontAwesome.Sharp.IconButton();
+            this.btnGestionEquipos = new FontAwesome.Sharp.IconButton();
             this.subMenuUsuarioAuditoria = new System.Windows.Forms.Panel();
             this.btnAuditoria = new FontAwesome.Sharp.IconButton();
             this.btnUsuarios = new FontAwesome.Sharp.IconButton();
+            this.btnUsuarioAuditoria = new FontAwesome.Sharp.IconButton();
             this.subMenuCajaPagos = new System.Windows.Forms.Panel();
             this.btnPago = new FontAwesome.Sharp.IconButton();
             this.btnCaja = new FontAwesome.Sharp.IconButton();
-            this.btnUsuarioAuditoria = new FontAwesome.Sharp.IconButton();
             this.btnCajaPagos = new FontAwesome.Sharp.IconButton();
             this.subMenuPromocionesEventos = new System.Windows.Forms.Panel();
             this.btnEventos = new FontAwesome.Sharp.IconButton();
@@ -89,11 +93,8 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblhora = new System.Windows.Forms.Label();
             this.pcbLogoImagen = new System.Windows.Forms.PictureBox();
-            this.btnGestionEquipos = new FontAwesome.Sharp.IconButton();
-            this.subMenuGestionEquipos = new System.Windows.Forms.Panel();
-            this.btnMantenimiento = new FontAwesome.Sharp.IconButton();
-            this.btnEquipos = new FontAwesome.Sharp.IconButton();
             this.pnlMenu.SuspendLayout();
+            this.subMenuGestionEquipos.SuspendLayout();
             this.subMenuUsuarioAuditoria.SuspendLayout();
             this.subMenuCajaPagos.SuspendLayout();
             this.subMenuPromocionesEventos.SuspendLayout();
@@ -109,7 +110,6 @@
             this.pnlUsuario.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogoImagen)).BeginInit();
-            this.subMenuGestionEquipos.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -143,6 +143,75 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(226, 774);
             this.pnlMenu.TabIndex = 3;
+            // 
+            // subMenuGestionEquipos
+            // 
+            this.subMenuGestionEquipos.Controls.Add(this.btnMantenimiento);
+            this.subMenuGestionEquipos.Controls.Add(this.btnEquipos);
+            this.subMenuGestionEquipos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.subMenuGestionEquipos.Location = new System.Drawing.Point(0, 1347);
+            this.subMenuGestionEquipos.Name = "subMenuGestionEquipos";
+            this.subMenuGestionEquipos.Size = new System.Drawing.Size(209, 64);
+            this.subMenuGestionEquipos.TabIndex = 27;
+            // 
+            // btnMantenimiento
+            // 
+            this.btnMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnMantenimiento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantenimiento.FlatAppearance.BorderSize = 0;
+            this.btnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantenimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnMantenimiento.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnMantenimiento.IconColor = System.Drawing.Color.Black;
+            this.btnMantenimiento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMantenimiento.Location = new System.Drawing.Point(0, 31);
+            this.btnMantenimiento.Name = "btnMantenimiento";
+            this.btnMantenimiento.Size = new System.Drawing.Size(209, 31);
+            this.btnMantenimiento.TabIndex = 2;
+            this.btnMantenimiento.Tag = "";
+            this.btnMantenimiento.Text = "Mantenimiento";
+            this.btnMantenimiento.UseVisualStyleBackColor = false;
+            // 
+            // btnEquipos
+            // 
+            this.btnEquipos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnEquipos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEquipos.FlatAppearance.BorderSize = 0;
+            this.btnEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquipos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnEquipos.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnEquipos.IconColor = System.Drawing.Color.Black;
+            this.btnEquipos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEquipos.Location = new System.Drawing.Point(0, 0);
+            this.btnEquipos.Name = "btnEquipos";
+            this.btnEquipos.Size = new System.Drawing.Size(209, 31);
+            this.btnEquipos.TabIndex = 1;
+            this.btnEquipos.Tag = "";
+            this.btnEquipos.Text = "Equipos";
+            this.btnEquipos.UseVisualStyleBackColor = false;
+            // 
+            // btnGestionEquipos
+            // 
+            this.btnGestionEquipos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGestionEquipos.FlatAppearance.BorderSize = 0;
+            this.btnGestionEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionEquipos.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionEquipos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnGestionEquipos.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.btnGestionEquipos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnGestionEquipos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGestionEquipos.IconSize = 30;
+            this.btnGestionEquipos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestionEquipos.Location = new System.Drawing.Point(0, 1310);
+            this.btnGestionEquipos.Name = "btnGestionEquipos";
+            this.btnGestionEquipos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnGestionEquipos.Size = new System.Drawing.Size(209, 37);
+            this.btnGestionEquipos.TabIndex = 26;
+            this.btnGestionEquipos.Tag = "Equipos y mantenimiento";
+            this.btnGestionEquipos.Text = "   Gestion de Equipos";
+            this.btnGestionEquipos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGestionEquipos.UseVisualStyleBackColor = true;
+            this.btnGestionEquipos.Click += new System.EventHandler(this.btnGestionEquipos_Click);
             // 
             // subMenuUsuarioAuditoria
             // 
@@ -190,6 +259,29 @@
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = false;
             // 
+            // btnUsuarioAuditoria
+            // 
+            this.btnUsuarioAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarioAuditoria.FlatAppearance.BorderSize = 0;
+            this.btnUsuarioAuditoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarioAuditoria.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarioAuditoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnUsuarioAuditoria.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.btnUsuarioAuditoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnUsuarioAuditoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUsuarioAuditoria.IconSize = 30;
+            this.btnUsuarioAuditoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarioAuditoria.Location = new System.Drawing.Point(0, 1211);
+            this.btnUsuarioAuditoria.Name = "btnUsuarioAuditoria";
+            this.btnUsuarioAuditoria.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnUsuarioAuditoria.Size = new System.Drawing.Size(209, 37);
+            this.btnUsuarioAuditoria.TabIndex = 21;
+            this.btnUsuarioAuditoria.Tag = "Usuarios y Auditoría";
+            this.btnUsuarioAuditoria.Text = "   Usuarios y Auditoría";
+            this.btnUsuarioAuditoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUsuarioAuditoria.UseVisualStyleBackColor = true;
+            this.btnUsuarioAuditoria.Click += new System.EventHandler(this.btnUsuarioAuditoria_Click);
+            // 
             // subMenuCajaPagos
             // 
             this.subMenuCajaPagos.Controls.Add(this.btnPago);
@@ -235,29 +327,6 @@
             this.btnCaja.Tag = "";
             this.btnCaja.Text = "Caja";
             this.btnCaja.UseVisualStyleBackColor = false;
-            // 
-            // btnUsuarioAuditoria
-            // 
-            this.btnUsuarioAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsuarioAuditoria.FlatAppearance.BorderSize = 0;
-            this.btnUsuarioAuditoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarioAuditoria.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarioAuditoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnUsuarioAuditoria.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
-            this.btnUsuarioAuditoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnUsuarioAuditoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUsuarioAuditoria.IconSize = 30;
-            this.btnUsuarioAuditoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarioAuditoria.Location = new System.Drawing.Point(0, 1211);
-            this.btnUsuarioAuditoria.Name = "btnUsuarioAuditoria";
-            this.btnUsuarioAuditoria.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnUsuarioAuditoria.Size = new System.Drawing.Size(209, 37);
-            this.btnUsuarioAuditoria.TabIndex = 21;
-            this.btnUsuarioAuditoria.Tag = "Usuarios y Auditoría";
-            this.btnUsuarioAuditoria.Text = "   Usuarios y Auditoría";
-            this.btnUsuarioAuditoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUsuarioAuditoria.UseVisualStyleBackColor = true;
-            this.btnUsuarioAuditoria.Click += new System.EventHandler(this.btnUsuarioAuditoria_Click);
             // 
             // btnCajaPagos
             // 
@@ -682,6 +751,7 @@
             this.btnAsistencias.Tag = "";
             this.btnAsistencias.Text = "Asistencias";
             this.btnAsistencias.UseVisualStyleBackColor = false;
+            this.btnAsistencias.Click += new System.EventHandler(this.btnAsistencias_Click);
             // 
             // btnTurnos
             // 
@@ -1117,75 +1187,6 @@
             this.pcbLogoImagen.TabIndex = 3;
             this.pcbLogoImagen.TabStop = false;
             // 
-            // btnGestionEquipos
-            // 
-            this.btnGestionEquipos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGestionEquipos.FlatAppearance.BorderSize = 0;
-            this.btnGestionEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGestionEquipos.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGestionEquipos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnGestionEquipos.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
-            this.btnGestionEquipos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnGestionEquipos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGestionEquipos.IconSize = 30;
-            this.btnGestionEquipos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGestionEquipos.Location = new System.Drawing.Point(0, 1310);
-            this.btnGestionEquipos.Name = "btnGestionEquipos";
-            this.btnGestionEquipos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnGestionEquipos.Size = new System.Drawing.Size(209, 37);
-            this.btnGestionEquipos.TabIndex = 26;
-            this.btnGestionEquipos.Tag = "Equipos y mantenimiento";
-            this.btnGestionEquipos.Text = "   Gestion de Equipos";
-            this.btnGestionEquipos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGestionEquipos.UseVisualStyleBackColor = true;
-            this.btnGestionEquipos.Click += new System.EventHandler(this.btnGestionEquipos_Click);
-            // 
-            // subMenuGestionEquipos
-            // 
-            this.subMenuGestionEquipos.Controls.Add(this.btnMantenimiento);
-            this.subMenuGestionEquipos.Controls.Add(this.btnEquipos);
-            this.subMenuGestionEquipos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subMenuGestionEquipos.Location = new System.Drawing.Point(0, 1347);
-            this.subMenuGestionEquipos.Name = "subMenuGestionEquipos";
-            this.subMenuGestionEquipos.Size = new System.Drawing.Size(209, 64);
-            this.subMenuGestionEquipos.TabIndex = 27;
-            // 
-            // btnMantenimiento
-            // 
-            this.btnMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnMantenimiento.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMantenimiento.FlatAppearance.BorderSize = 0;
-            this.btnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMantenimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnMantenimiento.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnMantenimiento.IconColor = System.Drawing.Color.Black;
-            this.btnMantenimiento.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMantenimiento.Location = new System.Drawing.Point(0, 31);
-            this.btnMantenimiento.Name = "btnMantenimiento";
-            this.btnMantenimiento.Size = new System.Drawing.Size(209, 31);
-            this.btnMantenimiento.TabIndex = 2;
-            this.btnMantenimiento.Tag = "";
-            this.btnMantenimiento.Text = "Mantenimiento";
-            this.btnMantenimiento.UseVisualStyleBackColor = false;
-            // 
-            // btnEquipos
-            // 
-            this.btnEquipos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnEquipos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEquipos.FlatAppearance.BorderSize = 0;
-            this.btnEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEquipos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnEquipos.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnEquipos.IconColor = System.Drawing.Color.Black;
-            this.btnEquipos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEquipos.Location = new System.Drawing.Point(0, 0);
-            this.btnEquipos.Name = "btnEquipos";
-            this.btnEquipos.Size = new System.Drawing.Size(209, 31);
-            this.btnEquipos.TabIndex = 1;
-            this.btnEquipos.Tag = "";
-            this.btnEquipos.Text = "Equipos";
-            this.btnEquipos.UseVisualStyleBackColor = false;
-            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1198,6 +1199,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.pnlMenu.ResumeLayout(false);
+            this.subMenuGestionEquipos.ResumeLayout(false);
             this.subMenuUsuarioAuditoria.ResumeLayout(false);
             this.subMenuCajaPagos.ResumeLayout(false);
             this.subMenuPromocionesEventos.ResumeLayout(false);
@@ -1216,7 +1218,6 @@
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogoImagen)).EndInit();
-            this.subMenuGestionEquipos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
