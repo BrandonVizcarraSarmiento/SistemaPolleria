@@ -74,7 +74,7 @@
             this.dgvAsistencia.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAsistencia.EnableHeadersVisualStyles = false;
             this.dgvAsistencia.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvAsistencia.Location = new System.Drawing.Point(184, 119);
+            this.dgvAsistencia.Location = new System.Drawing.Point(88, 132);
             this.dgvAsistencia.Margin = new System.Windows.Forms.Padding(2);
             this.dgvAsistencia.Name = "dgvAsistencia";
             this.dgvAsistencia.ReadOnly = true;
@@ -90,7 +90,7 @@
             this.dgvAsistencia.RowHeadersWidth = 51;
             this.dgvAsistencia.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.LightSeaGreen;
             this.dgvAsistencia.RowTemplate.Height = 24;
-            this.dgvAsistencia.Size = new System.Drawing.Size(600, 306);
+            this.dgvAsistencia.Size = new System.Drawing.Size(543, 306);
             this.dgvAsistencia.TabIndex = 25;
             // 
             // panel3
@@ -100,7 +100,7 @@
             this.panel3.Controls.Add(this.btnNuevoAsistencia);
             this.panel3.Controls.Add(this.btnEditarAsistencia);
             this.panel3.Controls.Add(this.btnEliminarAsistencia);
-            this.panel3.Location = new System.Drawing.Point(184, 445);
+            this.panel3.Location = new System.Drawing.Point(209, 461);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(303, 65);
             this.panel3.TabIndex = 27;
@@ -173,7 +173,7 @@
             this.panelBuscarCargos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelBuscarCargos.Controls.Add(this.txtBuscarAsistencias);
             this.panelBuscarCargos.Controls.Add(this.btnBuscarAsistencias);
-            this.panelBuscarCargos.Location = new System.Drawing.Point(308, 32);
+            this.panelBuscarCargos.Location = new System.Drawing.Point(230, 61);
             this.panelBuscarCargos.Name = "panelBuscarCargos";
             this.panelBuscarCargos.Size = new System.Drawing.Size(247, 47);
             this.panelBuscarCargos.TabIndex = 28;
@@ -210,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 611);
+            this.ClientSize = new System.Drawing.Size(724, 611);
             this.Controls.Add(this.panelBuscarCargos);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dgvAsistencia);

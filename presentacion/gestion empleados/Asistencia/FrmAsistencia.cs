@@ -1,5 +1,4 @@
-﻿using SenatiPractica.negocio.asistencia;
-using SistemaPolleria.Common;
+﻿using SistemaPolleria.negocio.asistencia;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +19,6 @@ namespace SistemaPolleria.presentacion.gestion_empleados.carpetas
         public FrmAsistencia()
         {
             InitializeComponent();
-            ConnectionString.Singleton.InitializeFromConfig("PolleriaDB");
-
-
         }
 
         private void CargarAsistencias()
@@ -40,11 +36,6 @@ namespace SistemaPolleria.presentacion.gestion_empleados.carpetas
             {
                 MessageBox.Show("No se encontraron asistencias.");
             }
-        }
-
-        private void dgvAsistencia_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
         
         private void FrmAsistencia_Load(object sender, EventArgs e)

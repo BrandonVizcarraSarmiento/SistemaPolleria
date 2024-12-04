@@ -7,12 +7,9 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaPolleria.Common.Asistencia;
- // Aquí debes tener el espacio de nombres de la clase de la entidad Asistencia
-
-
 using SistemaPolleria.Data.Asistencia;
 
-namespace SenatiPractica.negocio.asistencia
+namespace SistemaPolleria.negocio.asistencia
 {
     public class NegocioAsistencia
     {

@@ -62,6 +62,12 @@
     <Compile Include="common\EntidadAsistencia.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
+    <Compile Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.Designer.cs">
+      <DependentUpon>FrmAgregarAsistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="presentacion\gestion empleados\Asistencia\FrmAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.resx">
+      <DependentUpon>FrmAgregarAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestion empleados\Asistencia\FrmAsistencia.resx">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </EmbeddedResource>
