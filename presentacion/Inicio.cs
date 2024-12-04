@@ -68,6 +68,7 @@ namespace SistemaPolleria.presentacion
             subMenuPromocionesEventos.Visible = false;
             subMenuUsuarioAuditoria.Visible = false;
             subMenuCajaPagos.Visible = false;
+            subMenuGestionEquipos.Visible = false;
         }
         private void AlternarSubMenu(Panel subMenu)
         {
@@ -126,6 +127,10 @@ namespace SistemaPolleria.presentacion
         private void btnCajaPagos_Click(object sender, EventArgs e)
         {
             AlternarSubMenu(subMenuCajaPagos);
+        }
+        private void btnGestionEquipos_Click(object sender, EventArgs e)
+        {
+            AlternarSubMenu(subMenuGestionEquipos);
         }
 
         private void AbrirFormulario(IconButton menu, Form formulario)

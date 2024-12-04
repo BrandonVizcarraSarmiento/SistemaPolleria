@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.subMenuCajaPagos = new System.Windows.Forms.Panel();
-            this.btnPago = new FontAwesome.Sharp.IconButton();
-            this.btnCaja = new FontAwesome.Sharp.IconButton();
-            this.btnCajaPagos = new FontAwesome.Sharp.IconButton();
             this.subMenuUsuarioAuditoria = new System.Windows.Forms.Panel();
             this.btnAuditoria = new FontAwesome.Sharp.IconButton();
             this.btnUsuarios = new FontAwesome.Sharp.IconButton();
+            this.subMenuCajaPagos = new System.Windows.Forms.Panel();
+            this.btnPago = new FontAwesome.Sharp.IconButton();
+            this.btnCaja = new FontAwesome.Sharp.IconButton();
             this.btnUsuarioAuditoria = new FontAwesome.Sharp.IconButton();
+            this.btnCajaPagos = new FontAwesome.Sharp.IconButton();
             this.subMenuPromocionesEventos = new System.Windows.Forms.Panel();
             this.btnEventos = new FontAwesome.Sharp.IconButton();
             this.btnTiposEventos = new FontAwesome.Sharp.IconButton();
@@ -86,12 +86,16 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.pcbLogoImagen = new System.Windows.Forms.PictureBox();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblhora = new System.Windows.Forms.Label();
+            this.pcbLogoImagen = new System.Windows.Forms.PictureBox();
+            this.btnGestionEquipos = new FontAwesome.Sharp.IconButton();
+            this.subMenuGestionEquipos = new System.Windows.Forms.Panel();
+            this.btnMantenimiento = new FontAwesome.Sharp.IconButton();
+            this.btnEquipos = new FontAwesome.Sharp.IconButton();
             this.pnlMenu.SuspendLayout();
-            this.subMenuCajaPagos.SuspendLayout();
             this.subMenuUsuarioAuditoria.SuspendLayout();
+            this.subMenuCajaPagos.SuspendLayout();
             this.subMenuPromocionesEventos.SuspendLayout();
             this.subMenuComprasProveedores.SuspendLayout();
             this.subMenuClientes.SuspendLayout();
@@ -105,16 +109,19 @@
             this.pnlUsuario.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogoImagen)).BeginInit();
+            this.subMenuGestionEquipos.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
             this.pnlMenu.AutoScroll = true;
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.pnlMenu.Controls.Add(this.subMenuCajaPagos);
-            this.pnlMenu.Controls.Add(this.btnCajaPagos);
+            this.pnlMenu.Controls.Add(this.subMenuGestionEquipos);
+            this.pnlMenu.Controls.Add(this.btnGestionEquipos);
             this.pnlMenu.Controls.Add(this.subMenuUsuarioAuditoria);
             this.pnlMenu.Controls.Add(this.btnUsuarioAuditoria);
+            this.pnlMenu.Controls.Add(this.subMenuCajaPagos);
+            this.pnlMenu.Controls.Add(this.btnCajaPagos);
             this.pnlMenu.Controls.Add(this.subMenuPromocionesEventos);
             this.pnlMenu.Controls.Add(this.btnPromocionesEventos);
             this.pnlMenu.Controls.Add(this.subMenuComprasProveedores);
@@ -137,81 +144,12 @@
             this.pnlMenu.Size = new System.Drawing.Size(226, 774);
             this.pnlMenu.TabIndex = 3;
             // 
-            // subMenuCajaPagos
-            // 
-            this.subMenuCajaPagos.Controls.Add(this.btnPago);
-            this.subMenuCajaPagos.Controls.Add(this.btnCaja);
-            this.subMenuCajaPagos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subMenuCajaPagos.Location = new System.Drawing.Point(0, 1246);
-            this.subMenuCajaPagos.Name = "subMenuCajaPagos";
-            this.subMenuCajaPagos.Size = new System.Drawing.Size(209, 64);
-            this.subMenuCajaPagos.TabIndex = 23;
-            // 
-            // btnPago
-            // 
-            this.btnPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnPago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPago.FlatAppearance.BorderSize = 0;
-            this.btnPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnPago.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnPago.IconColor = System.Drawing.Color.Black;
-            this.btnPago.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPago.Location = new System.Drawing.Point(0, 31);
-            this.btnPago.Name = "btnPago";
-            this.btnPago.Size = new System.Drawing.Size(209, 31);
-            this.btnPago.TabIndex = 2;
-            this.btnPago.Tag = "";
-            this.btnPago.Text = "Pagos";
-            this.btnPago.UseVisualStyleBackColor = false;
-            // 
-            // btnCaja
-            // 
-            this.btnCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
-            this.btnCaja.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCaja.FlatAppearance.BorderSize = 0;
-            this.btnCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnCaja.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCaja.IconColor = System.Drawing.Color.Black;
-            this.btnCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCaja.Location = new System.Drawing.Point(0, 0);
-            this.btnCaja.Name = "btnCaja";
-            this.btnCaja.Size = new System.Drawing.Size(209, 31);
-            this.btnCaja.TabIndex = 1;
-            this.btnCaja.Tag = "";
-            this.btnCaja.Text = "Caja";
-            this.btnCaja.UseVisualStyleBackColor = false;
-            // 
-            // btnCajaPagos
-            // 
-            this.btnCajaPagos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCajaPagos.FlatAppearance.BorderSize = 0;
-            this.btnCajaPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCajaPagos.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCajaPagos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnCajaPagos.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
-            this.btnCajaPagos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.btnCajaPagos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCajaPagos.IconSize = 30;
-            this.btnCajaPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCajaPagos.Location = new System.Drawing.Point(0, 1209);
-            this.btnCajaPagos.Name = "btnCajaPagos";
-            this.btnCajaPagos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnCajaPagos.Size = new System.Drawing.Size(209, 37);
-            this.btnCajaPagos.TabIndex = 22;
-            this.btnCajaPagos.Tag = "   Caja y pagos";
-            this.btnCajaPagos.Text = "   Caja y pagos";
-            this.btnCajaPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCajaPagos.UseVisualStyleBackColor = true;
-            this.btnCajaPagos.Click += new System.EventHandler(this.btnCajaPagos_Click);
-            // 
             // subMenuUsuarioAuditoria
             // 
             this.subMenuUsuarioAuditoria.Controls.Add(this.btnAuditoria);
             this.subMenuUsuarioAuditoria.Controls.Add(this.btnUsuarios);
             this.subMenuUsuarioAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subMenuUsuarioAuditoria.Location = new System.Drawing.Point(0, 1147);
+            this.subMenuUsuarioAuditoria.Location = new System.Drawing.Point(0, 1248);
             this.subMenuUsuarioAuditoria.Name = "subMenuUsuarioAuditoria";
             this.subMenuUsuarioAuditoria.Size = new System.Drawing.Size(209, 62);
             this.subMenuUsuarioAuditoria.TabIndex = 21;
@@ -252,6 +190,52 @@
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = false;
             // 
+            // subMenuCajaPagos
+            // 
+            this.subMenuCajaPagos.Controls.Add(this.btnPago);
+            this.subMenuCajaPagos.Controls.Add(this.btnCaja);
+            this.subMenuCajaPagos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.subMenuCajaPagos.Location = new System.Drawing.Point(0, 1147);
+            this.subMenuCajaPagos.Name = "subMenuCajaPagos";
+            this.subMenuCajaPagos.Size = new System.Drawing.Size(209, 64);
+            this.subMenuCajaPagos.TabIndex = 23;
+            // 
+            // btnPago
+            // 
+            this.btnPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnPago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPago.FlatAppearance.BorderSize = 0;
+            this.btnPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnPago.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnPago.IconColor = System.Drawing.Color.Black;
+            this.btnPago.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPago.Location = new System.Drawing.Point(0, 31);
+            this.btnPago.Name = "btnPago";
+            this.btnPago.Size = new System.Drawing.Size(209, 31);
+            this.btnPago.TabIndex = 2;
+            this.btnPago.Tag = "";
+            this.btnPago.Text = "Pagos";
+            this.btnPago.UseVisualStyleBackColor = false;
+            // 
+            // btnCaja
+            // 
+            this.btnCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnCaja.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCaja.FlatAppearance.BorderSize = 0;
+            this.btnCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCaja.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCaja.IconColor = System.Drawing.Color.Black;
+            this.btnCaja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCaja.Location = new System.Drawing.Point(0, 0);
+            this.btnCaja.Name = "btnCaja";
+            this.btnCaja.Size = new System.Drawing.Size(209, 31);
+            this.btnCaja.TabIndex = 1;
+            this.btnCaja.Tag = "";
+            this.btnCaja.Text = "Caja";
+            this.btnCaja.UseVisualStyleBackColor = false;
+            // 
             // btnUsuarioAuditoria
             // 
             this.btnUsuarioAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
@@ -264,16 +248,39 @@
             this.btnUsuarioAuditoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUsuarioAuditoria.IconSize = 30;
             this.btnUsuarioAuditoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarioAuditoria.Location = new System.Drawing.Point(0, 1110);
+            this.btnUsuarioAuditoria.Location = new System.Drawing.Point(0, 1211);
             this.btnUsuarioAuditoria.Name = "btnUsuarioAuditoria";
             this.btnUsuarioAuditoria.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnUsuarioAuditoria.Size = new System.Drawing.Size(209, 37);
             this.btnUsuarioAuditoria.TabIndex = 21;
-            this.btnUsuarioAuditoria.Tag = "   Usuarios y Auditoría";
+            this.btnUsuarioAuditoria.Tag = "Usuarios y Auditoría";
             this.btnUsuarioAuditoria.Text = "   Usuarios y Auditoría";
             this.btnUsuarioAuditoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUsuarioAuditoria.UseVisualStyleBackColor = true;
             this.btnUsuarioAuditoria.Click += new System.EventHandler(this.btnUsuarioAuditoria_Click);
+            // 
+            // btnCajaPagos
+            // 
+            this.btnCajaPagos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCajaPagos.FlatAppearance.BorderSize = 0;
+            this.btnCajaPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCajaPagos.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCajaPagos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCajaPagos.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.btnCajaPagos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnCajaPagos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCajaPagos.IconSize = 30;
+            this.btnCajaPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCajaPagos.Location = new System.Drawing.Point(0, 1110);
+            this.btnCajaPagos.Name = "btnCajaPagos";
+            this.btnCajaPagos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCajaPagos.Size = new System.Drawing.Size(209, 37);
+            this.btnCajaPagos.TabIndex = 22;
+            this.btnCajaPagos.Tag = "Caja y pagos";
+            this.btnCajaPagos.Text = "   Caja y pagos";
+            this.btnCajaPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCajaPagos.UseVisualStyleBackColor = true;
+            this.btnCajaPagos.Click += new System.EventHandler(this.btnCajaPagos_Click);
             // 
             // subMenuPromocionesEventos
             // 
@@ -357,7 +364,7 @@
             this.btnPromocionesEventos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnPromocionesEventos.Size = new System.Drawing.Size(209, 37);
             this.btnPromocionesEventos.TabIndex = 11;
-            this.btnPromocionesEventos.Tag = "   Promociones y Eventos";
+            this.btnPromocionesEventos.Tag = "Promociones y Eventos";
             this.btnPromocionesEventos.Text = "   Promociones y Eventos";
             this.btnPromocionesEventos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPromocionesEventos.UseVisualStyleBackColor = true;
@@ -445,7 +452,7 @@
             this.btnComprasProveedores.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnComprasProveedores.Size = new System.Drawing.Size(209, 37);
             this.btnComprasProveedores.TabIndex = 18;
-            this.btnComprasProveedores.Tag = "   Gestión de Compras y Proveedores";
+            this.btnComprasProveedores.Tag = "Gestión de Compras y Proveedores";
             this.btnComprasProveedores.Text = "   Gestión de Compras y Proveedores";
             this.btnComprasProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnComprasProveedores.UseVisualStyleBackColor = true;
@@ -495,7 +502,7 @@
             this.btnGestionClientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGestionClientes.Size = new System.Drawing.Size(209, 37);
             this.btnGestionClientes.TabIndex = 16;
-            this.btnGestionClientes.Tag = "   Gestión de Clientes";
+            this.btnGestionClientes.Tag = "Gestión de Clientes";
             this.btnGestionClientes.Text = "   Gestión de Clientes";
             this.btnGestionClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGestionClientes.UseVisualStyleBackColor = true;
@@ -621,7 +628,7 @@
             this.btnPlatosCocina.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnPlatosCocina.Size = new System.Drawing.Size(209, 37);
             this.btnPlatosCocina.TabIndex = 11;
-            this.btnPlatosCocina.Tag = "   Gestión de Platos y Cocina";
+            this.btnPlatosCocina.Tag = "Gestión de Platos y Cocina";
             this.btnPlatosCocina.Text = "   Gestión de Platos y Cocina";
             this.btnPlatosCocina.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPlatosCocina.UseVisualStyleBackColor = true;
@@ -835,7 +842,7 @@
             this.btnMesasReservas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMesasReservas.Size = new System.Drawing.Size(209, 37);
             this.btnMesasReservas.TabIndex = 5;
-            this.btnMesasReservas.Tag = "   Gestión de Mesas y Reservas";
+            this.btnMesasReservas.Tag = "Gestión de Mesas y Reservas";
             this.btnMesasReservas.Text = "   Gestión de Mesas y Reservas";
             this.btnMesasReservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMesasReservas.UseVisualStyleBackColor = true;
@@ -941,7 +948,7 @@
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 30;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(0, 1310);
+            this.btnSalir.Location = new System.Drawing.Point(0, 1411);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSalir.Size = new System.Drawing.Size(209, 67);
@@ -968,7 +975,7 @@
             this.btnPedidosVentas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnPedidosVentas.Size = new System.Drawing.Size(209, 37);
             this.btnPedidosVentas.TabIndex = 5;
-            this.btnPedidosVentas.Tag = "   Gestión de Pedidos y Ventas";
+            this.btnPedidosVentas.Tag = "Gestión de Pedidos y Ventas";
             this.btnPedidosVentas.Text = "   Gestión de Pedidos y Ventas";
             this.btnPedidosVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPedidosVentas.UseVisualStyleBackColor = true;
@@ -1075,17 +1082,6 @@
             this.pnlContenedor.Size = new System.Drawing.Size(882, 680);
             this.pnlContenedor.TabIndex = 5;
             // 
-            // pcbLogoImagen
-            // 
-            this.pcbLogoImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pcbLogoImagen.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogoImagen.Image")));
-            this.pcbLogoImagen.Location = new System.Drawing.Point(272, 37);
-            this.pcbLogoImagen.Name = "pcbLogoImagen";
-            this.pcbLogoImagen.Size = new System.Drawing.Size(359, 301);
-            this.pcbLogoImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbLogoImagen.TabIndex = 3;
-            this.pcbLogoImagen.TabStop = false;
-            // 
             // lblFecha
             // 
             this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1110,6 +1106,86 @@
             this.lblhora.TabIndex = 5;
             this.lblhora.Text = "Hora";
             // 
+            // pcbLogoImagen
+            // 
+            this.pcbLogoImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pcbLogoImagen.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogoImagen.Image")));
+            this.pcbLogoImagen.Location = new System.Drawing.Point(272, 37);
+            this.pcbLogoImagen.Name = "pcbLogoImagen";
+            this.pcbLogoImagen.Size = new System.Drawing.Size(359, 301);
+            this.pcbLogoImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbLogoImagen.TabIndex = 3;
+            this.pcbLogoImagen.TabStop = false;
+            // 
+            // btnGestionEquipos
+            // 
+            this.btnGestionEquipos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGestionEquipos.FlatAppearance.BorderSize = 0;
+            this.btnGestionEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionEquipos.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionEquipos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnGestionEquipos.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.btnGestionEquipos.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnGestionEquipos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGestionEquipos.IconSize = 30;
+            this.btnGestionEquipos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestionEquipos.Location = new System.Drawing.Point(0, 1310);
+            this.btnGestionEquipos.Name = "btnGestionEquipos";
+            this.btnGestionEquipos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnGestionEquipos.Size = new System.Drawing.Size(209, 37);
+            this.btnGestionEquipos.TabIndex = 26;
+            this.btnGestionEquipos.Tag = "Equipos y mantenimiento";
+            this.btnGestionEquipos.Text = "   Gestion de Equipos";
+            this.btnGestionEquipos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGestionEquipos.UseVisualStyleBackColor = true;
+            this.btnGestionEquipos.Click += new System.EventHandler(this.btnGestionEquipos_Click);
+            // 
+            // subMenuGestionEquipos
+            // 
+            this.subMenuGestionEquipos.Controls.Add(this.btnMantenimiento);
+            this.subMenuGestionEquipos.Controls.Add(this.btnEquipos);
+            this.subMenuGestionEquipos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.subMenuGestionEquipos.Location = new System.Drawing.Point(0, 1347);
+            this.subMenuGestionEquipos.Name = "subMenuGestionEquipos";
+            this.subMenuGestionEquipos.Size = new System.Drawing.Size(209, 64);
+            this.subMenuGestionEquipos.TabIndex = 27;
+            // 
+            // btnMantenimiento
+            // 
+            this.btnMantenimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnMantenimiento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMantenimiento.FlatAppearance.BorderSize = 0;
+            this.btnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMantenimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnMantenimiento.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnMantenimiento.IconColor = System.Drawing.Color.Black;
+            this.btnMantenimiento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMantenimiento.Location = new System.Drawing.Point(0, 31);
+            this.btnMantenimiento.Name = "btnMantenimiento";
+            this.btnMantenimiento.Size = new System.Drawing.Size(209, 31);
+            this.btnMantenimiento.TabIndex = 2;
+            this.btnMantenimiento.Tag = "";
+            this.btnMantenimiento.Text = "Mantenimiento";
+            this.btnMantenimiento.UseVisualStyleBackColor = false;
+            // 
+            // btnEquipos
+            // 
+            this.btnEquipos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(217)))), ((int)(((byte)(102)))));
+            this.btnEquipos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEquipos.FlatAppearance.BorderSize = 0;
+            this.btnEquipos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquipos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.btnEquipos.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnEquipos.IconColor = System.Drawing.Color.Black;
+            this.btnEquipos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEquipos.Location = new System.Drawing.Point(0, 0);
+            this.btnEquipos.Name = "btnEquipos";
+            this.btnEquipos.Size = new System.Drawing.Size(209, 31);
+            this.btnEquipos.TabIndex = 1;
+            this.btnEquipos.Tag = "";
+            this.btnEquipos.Text = "Equipos";
+            this.btnEquipos.UseVisualStyleBackColor = false;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1122,8 +1198,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.pnlMenu.ResumeLayout(false);
-            this.subMenuCajaPagos.ResumeLayout(false);
             this.subMenuUsuarioAuditoria.ResumeLayout(false);
+            this.subMenuCajaPagos.ResumeLayout(false);
             this.subMenuPromocionesEventos.ResumeLayout(false);
             this.subMenuComprasProveedores.ResumeLayout(false);
             this.subMenuClientes.ResumeLayout(false);
@@ -1140,6 +1216,7 @@
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogoImagen)).EndInit();
+            this.subMenuGestionEquipos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1206,5 +1283,9 @@
         private System.Windows.Forms.PictureBox pcbLogoImagen;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblhora;
+        private System.Windows.Forms.Panel subMenuGestionEquipos;
+        private FontAwesome.Sharp.IconButton btnMantenimiento;
+        private FontAwesome.Sharp.IconButton btnEquipos;
+        private FontAwesome.Sharp.IconButton btnGestionEquipos;
     }
 }
