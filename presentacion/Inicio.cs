@@ -1,6 +1,7 @@
 ﻿using FontAwesome.Sharp;
 using SistemaPolleria.presentacion.gestion_empleados.carpetas;
 using SistemaPolleria.presentacion.gestion_empleados.empleado;
+using SistemaPolleria.presentacion.gestion_empleados.horarios;
 using SistemaPolleria.presentacion.gestionPedidosVentas.detallePedido;
 using SistemaPolleria.presentacion.gestionPedidosVentas.entregas;
 using SistemaPolleria.presentacion.gestionPedidosVentas.pagos;
@@ -191,6 +192,11 @@ namespace SistemaPolleria.presentacion
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconButton)sender, new FrmEmpleado());
+        }
+
+        private void btnHorarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmHorario());
         }
     }
 }

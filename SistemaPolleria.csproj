@@ -61,8 +61,11 @@
     <Compile Include="common\ConnectionString.cs" />
     <Compile Include="common\EntidadAsistencia.cs" />
     <Compile Include="common\EntidadEmpleado.cs" />
+    <Compile Include="common\EntidadHorario.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
     <Compile Include="datos\DatosEmpleado.cs" />
+    <Compile Include="datos\DatosHorario.cs" />
+    <Compile Include="negocios\NegocioHorario.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
     <Compile Include="negocios\NegociosEmpleado.cs" />
     <Compile Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.cs">
@@ -100,6 +103,24 @@
     </Compile>
     <Compile Include="presentacion\gestion empleados\empleado\FrmEmpleado.Designer.cs">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.Designer.cs">
+      <DependentUpon>FrmAgregarHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\horarios\FrmEditarHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\horarios\FrmEditarHorario.Designer.cs">
+      <DependentUpon>FrmEditarHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\horarios\FrmHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\horarios\FrmHorario.Designer.cs">
+      <DependentUpon>FrmHorario.cs</DependentUpon>
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.cs">
       <SubType>Form</SubType>
@@ -156,6 +177,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmEmpleado.resx">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.resx">
+      <DependentUpon>FrmAgregarHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmEditarHorario.resx">
+      <DependentUpon>FrmEditarHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmHorario.resx">
+      <DependentUpon>FrmHorario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.resx">
       <DependentUpon>FrmDetallePedido.cs</DependentUpon>

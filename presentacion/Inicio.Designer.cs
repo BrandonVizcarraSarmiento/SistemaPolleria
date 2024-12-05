@@ -788,6 +788,7 @@
             this.btnHorarios.Tag = "";
             this.btnHorarios.Text = "Horarios";
             this.btnHorarios.UseVisualStyleBackColor = false;
+            this.btnHorarios.Click += new System.EventHandler(this.btnHorarios_Click);
             // 
             // btnEmpleados
             // 
