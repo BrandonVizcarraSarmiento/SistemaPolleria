@@ -806,6 +806,7 @@
             this.btnEmpleados.Tag = "";
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = false;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // btnGestionEmpleados
             // 
@@ -1095,7 +1096,7 @@
             this.panelTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panelTitulo.Location = new System.Drawing.Point(226, 0);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(882, 94);
+            this.panelTitulo.Size = new System.Drawing.Size(968, 94);
             this.panelTitulo.TabIndex = 4;
             // 
             // pnlUsuario
@@ -1104,7 +1105,7 @@
             this.pnlUsuario.Controls.Add(this.lblRol);
             this.pnlUsuario.Controls.Add(this.lblUsuario);
             this.pnlUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlUsuario.Location = new System.Drawing.Point(735, 3);
+            this.pnlUsuario.Location = new System.Drawing.Point(821, 3);
             this.pnlUsuario.Name = "pnlUsuario";
             this.pnlUsuario.Size = new System.Drawing.Size(122, 88);
             this.pnlUsuario.TabIndex = 3;
@@ -1149,7 +1150,7 @@
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(226, 94);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(882, 680);
+            this.pnlContenedor.Size = new System.Drawing.Size(968, 680);
             this.pnlContenedor.TabIndex = 5;
             // 
             // lblFecha
@@ -1158,7 +1159,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.lblFecha.Location = new System.Drawing.Point(422, 414);
+            this.lblFecha.Location = new System.Drawing.Point(465, 414);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(90, 31);
             this.lblFecha.TabIndex = 6;
@@ -1170,7 +1171,7 @@
             this.lblhora.AutoSize = true;
             this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.lblhora.Location = new System.Drawing.Point(439, 358);
+            this.lblhora.Location = new System.Drawing.Point(482, 358);
             this.lblhora.Name = "lblhora";
             this.lblhora.Size = new System.Drawing.Size(73, 31);
             this.lblhora.TabIndex = 5;
@@ -1180,7 +1181,7 @@
             // 
             this.pcbLogoImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pcbLogoImagen.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogoImagen.Image")));
-            this.pcbLogoImagen.Location = new System.Drawing.Point(272, 37);
+            this.pcbLogoImagen.Location = new System.Drawing.Point(315, 37);
             this.pcbLogoImagen.Name = "pcbLogoImagen";
             this.pcbLogoImagen.Size = new System.Drawing.Size(359, 301);
             this.pcbLogoImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1191,7 +1192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 774);
+            this.ClientSize = new System.Drawing.Size(1194, 774);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.pnlMenu);

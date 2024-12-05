@@ -15,6 +15,12 @@ namespace SistemaPolleria.negocio.asistencia
     {
         private DatosAsistencia _datosAsistencia = new DatosAsistencia();
 
+        // Obtener todas las asistencias
+        public DataTable ObtenerTodasAsistenciasN()
+        {
+            return _datosAsistencia.ObtenerTodasAsistencias();
+        }
+
         // Insertar nueva asistencia
         public int InsertarAsistenciaN(EntidadAsistencia asistencia)
         {
@@ -35,14 +41,6 @@ namespace SistemaPolleria.negocio.asistencia
             int numRes = _datosAsistencia.InsertarAsistencia(asistencia);
             return numRes;
         }
-
-        // Obtener todas las asistencias
-        public DataTable ObtenerTodasAsistenciasN()
-        {
-            return _datosAsistencia.ObtenerTodasAsistencias();
-        }
-
-
 
         // Editar asistencia
         public int EditarAsistenciaN(EntidadAsistencia asistencia)
@@ -67,6 +65,10 @@ namespace SistemaPolleria.negocio.asistencia
         public int EliminarAsistenciaN(int idAsistencia)
         {
             return _datosAsistencia.EliminarAsistencia(idAsistencia);
+        }
+        public DataTable ObtenerAsistenciaPorNombreN(string nombreEmpleado)
+        {
+            return _datosAsistencia.ObtenerAsistenciaPorNombre(nombreEmpleado);
         }
     }
 }

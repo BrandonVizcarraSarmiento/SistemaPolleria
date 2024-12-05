@@ -13,14 +13,26 @@ using System.Windows.Forms;
 
 namespace SistemaPolleria.presentacion.gestion_empleados.Asistencia
 {
-    public partial class FrmAgregarAsistencia : Form
+    public partial class FrmEditarAsistencia : Form
     {
         private NegocioAsistencia _negocioAsistencia = new NegocioAsistencia();
         private NegociosEmpleado _negocioEmpleado = new NegociosEmpleado();
-        public FrmAgregarAsistencia()
+
+        private int asistenciaID;
+        private int empleadoID;
+
+        public FrmEditarAsistencia(int asistenciaID, int empleadoID, DateTime fecha, TimeSpan horaEntrada, TimeSpan horaSalida)
         {
             InitializeComponent();
+            this.asistenciaID = asistenciaID;
+            this.empleadoID = empleadoID;
+
+            dtpFecha.Value = fecha;
+            dtpHoraInicioAsistencia.Value = DateTime.Today.Add(horaEntrada);  // Añadir solo el TimeSpan
+            dtpHoraFinAsistencia.Value = DateTime.Today.Add(horaSalida);
+
         }
+        // Método para cargar los empleados en el ComboBox
         private void CargarEmpleados()
         {
             try
@@ -42,6 +54,9 @@ namespace SistemaPolleria.presentacion.gestion_empleados.Asistencia
                     cboEmpleado.DisplayMember = "Nombre";  // Mostrar nombre completo
                     cboEmpleado.ValueMember = "EmpleadoID"; // Guardar el ID del empleado
                     cboEmpleado.DataSource = empleados;    // Asignamos el DataTable al ComboBox
+
+                    // Establecemos el valor seleccionado por defecto (el empleado de la asistencia que estamos editando)
+                    cboEmpleado.SelectedValue = empleadoID;
                 }
                 else
                 {
@@ -53,49 +68,50 @@ namespace SistemaPolleria.presentacion.gestion_empleados.Asistencia
                 MessageBox.Show("Error al cargar empleados: " + ex.Message);
             }
         }
-
-        private void FrmAgregarAsistencia_Load(object sender, EventArgs e)
+        private void FrmEditarAsistencia_Load(object sender, EventArgs e)
         {
             CargarEmpleados();
         }
-        private void btnGuardarAsistencia_Click(object sender, EventArgs e)
+
+        private void btnEditarAsistencia_Click(object sender, EventArgs e)
         {
             try
             {
-                // Capturamos los valores del formulario
-                int empleadoID = Convert.ToInt32(cboEmpleado.SelectedValue); // Obtenemos el ID del empleado seleccionado
-                DateTime fecha = dtpFecha.Value; // Fecha seleccionada
+                // Obtenemos los datos del formulario
+                int empleadoID = Convert.ToInt32(cboEmpleado.SelectedValue);
+                DateTime fecha = dtpFecha.Value;
 
-                // Tomamos solo la hora, minutos y segundos (sin fracciones de segundo)
+                // Cambiar a TimeSpan para las horas
                 TimeSpan horaEntrada = dtpHoraInicioAsistencia.Value.TimeOfDay;
                 TimeSpan horaSalida = dtpHoraFinAsistencia.Value.TimeOfDay;
 
-                // Redondeamos la hora de entrada y salida para evitar los milisegundos
-                horaEntrada = new TimeSpan(horaEntrada.Hours, horaEntrada.Minutes, horaEntrada.Seconds);
-                horaSalida = new TimeSpan(horaSalida.Hours, horaSalida.Minutes, horaSalida.Seconds);
+                // Creamos la instancia de la entidad Asistencia con los datos del formulario
+                EntidadAsistencia asistencia = new EntidadAsistencia
+                {
+                    AsistenciaID = asistenciaID,
+                    EmpleadoID = empleadoID,
+                    Fecha = fecha,
+                    HoraEntrada = horaEntrada,
+                    HoraSalida = horaSalida
+                };
 
-                // Creamos la entidad de asistencia
-                EntidadAsistencia nuevaAsistencia = new EntidadAsistencia(empleadoID, fecha, horaEntrada, horaSalida);
+                // Llamamos al método de negocio para actualizar la asistencia
+                int resultado = _negocioAsistencia.EditarAsistenciaN(asistencia);
 
-                // Insertamos la asistencia usando el negocio
-                int resultado = _negocioAsistencia.InsertarAsistenciaN(nuevaAsistencia);
-
-                // Verificamos el resultado
                 if (resultado > 0)
                 {
-                    MessageBox.Show("Asistencia registrada correctamente.");
+                    MessageBox.Show("Asistencia actualizada correctamente.");
                     this.Close(); // Cerramos el formulario
                 }
                 else
                 {
-                    MessageBox.Show("Hubo un problema al registrar la asistencia.");
+                    MessageBox.Show("Error al actualizar la asistencia.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error al editar la asistencia: " + ex.Message);
             }
         }
-
     }
 }

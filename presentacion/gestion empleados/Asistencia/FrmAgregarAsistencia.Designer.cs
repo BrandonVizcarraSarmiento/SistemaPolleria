@@ -31,15 +31,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.txtNombreCargo = new System.Windows.Forms.TextBox();
-            this.btnCancelarCargo = new FontAwesome.Sharp.IconButton();
-            this.btnLimpiarCargo = new FontAwesome.Sharp.IconButton();
-            this.btnGuardarCargo = new FontAwesome.Sharp.IconButton();
+            this.btnCancelarAsistencia = new FontAwesome.Sharp.IconButton();
+            this.btnLimpiarAsistencia = new FontAwesome.Sharp.IconButton();
+            this.btnGuardarAsistencia = new FontAwesome.Sharp.IconButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dtpFechaFinContraton = new System.Windows.Forms.DateTimePicker();
-            this.dtpFechaIniciContrato = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraFinAsistencia = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraInicioAsistencia = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.cboEmpleado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
@@ -59,9 +59,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(43, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(110, 13);
             this.label3.TabIndex = 49;
-            this.label3.Text = "Nombre";
+            this.label3.Text = "Nombre del empleado";
             // 
             // lblFecha
             // 
@@ -73,72 +73,66 @@
             this.lblFecha.TabIndex = 47;
             this.lblFecha.Text = "Fecha";
             // 
-            // txtNombreCargo
+            // btnCancelarAsistencia
             // 
-            this.txtNombreCargo.Location = new System.Drawing.Point(46, 112);
-            this.txtNombreCargo.Name = "txtNombreCargo";
-            this.txtNombreCargo.Size = new System.Drawing.Size(255, 20);
-            this.txtNombreCargo.TabIndex = 48;
+            this.btnCancelarAsistencia.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCancelarAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelarAsistencia.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelarAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarAsistencia.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarAsistencia.IconChar = FontAwesome.Sharp.IconChar.Ban;
+            this.btnCancelarAsistencia.IconColor = System.Drawing.Color.White;
+            this.btnCancelarAsistencia.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCancelarAsistencia.IconSize = 21;
+            this.btnCancelarAsistencia.Location = new System.Drawing.Point(220, 243);
+            this.btnCancelarAsistencia.Name = "btnCancelarAsistencia";
+            this.btnCancelarAsistencia.Size = new System.Drawing.Size(81, 33);
+            this.btnCancelarAsistencia.TabIndex = 45;
+            this.btnCancelarAsistencia.Text = "Cancelar";
+            this.btnCancelarAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelarAsistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelarAsistencia.UseVisualStyleBackColor = false;
             // 
-            // btnCancelarCargo
+            // btnLimpiarAsistencia
             // 
-            this.btnCancelarCargo.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnCancelarCargo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelarCargo.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarCargo.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarCargo.IconChar = FontAwesome.Sharp.IconChar.Ban;
-            this.btnCancelarCargo.IconColor = System.Drawing.Color.White;
-            this.btnCancelarCargo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCancelarCargo.IconSize = 21;
-            this.btnCancelarCargo.Location = new System.Drawing.Point(220, 243);
-            this.btnCancelarCargo.Name = "btnCancelarCargo";
-            this.btnCancelarCargo.Size = new System.Drawing.Size(81, 33);
-            this.btnCancelarCargo.TabIndex = 45;
-            this.btnCancelarCargo.Text = "Cancelar";
-            this.btnCancelarCargo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelarCargo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelarCargo.UseVisualStyleBackColor = false;
+            this.btnLimpiarAsistencia.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnLimpiarAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiarAsistencia.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLimpiarAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarAsistencia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLimpiarAsistencia.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.btnLimpiarAsistencia.IconColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLimpiarAsistencia.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLimpiarAsistencia.IconSize = 21;
+            this.btnLimpiarAsistencia.Location = new System.Drawing.Point(133, 243);
+            this.btnLimpiarAsistencia.Name = "btnLimpiarAsistencia";
+            this.btnLimpiarAsistencia.Size = new System.Drawing.Size(81, 33);
+            this.btnLimpiarAsistencia.TabIndex = 44;
+            this.btnLimpiarAsistencia.Text = "Limpiar";
+            this.btnLimpiarAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiarAsistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpiarAsistencia.UseVisualStyleBackColor = false;
             // 
-            // btnLimpiarCargo
+            // btnGuardarAsistencia
             // 
-            this.btnLimpiarCargo.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnLimpiarCargo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiarCargo.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnLimpiarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiarCargo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLimpiarCargo.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.btnLimpiarCargo.IconColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLimpiarCargo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLimpiarCargo.IconSize = 21;
-            this.btnLimpiarCargo.Location = new System.Drawing.Point(133, 243);
-            this.btnLimpiarCargo.Name = "btnLimpiarCargo";
-            this.btnLimpiarCargo.Size = new System.Drawing.Size(81, 33);
-            this.btnLimpiarCargo.TabIndex = 44;
-            this.btnLimpiarCargo.Text = "Limpiar";
-            this.btnLimpiarCargo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiarCargo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLimpiarCargo.UseVisualStyleBackColor = false;
-            // 
-            // btnGuardarCargo
-            // 
-            this.btnGuardarCargo.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnGuardarCargo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarCargo.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnGuardarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarCargo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCargo.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.btnGuardarCargo.IconColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCargo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardarCargo.IconSize = 21;
-            this.btnGuardarCargo.Location = new System.Drawing.Point(46, 243);
-            this.btnGuardarCargo.Name = "btnGuardarCargo";
-            this.btnGuardarCargo.Size = new System.Drawing.Size(81, 33);
-            this.btnGuardarCargo.TabIndex = 43;
-            this.btnGuardarCargo.Text = "Guardar";
-            this.btnGuardarCargo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardarCargo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardarCargo.UseVisualStyleBackColor = false;
+            this.btnGuardarAsistencia.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnGuardarAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarAsistencia.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGuardarAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarAsistencia.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarAsistencia.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            this.btnGuardarAsistencia.IconColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGuardarAsistencia.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGuardarAsistencia.IconSize = 21;
+            this.btnGuardarAsistencia.Location = new System.Drawing.Point(46, 243);
+            this.btnGuardarAsistencia.Name = "btnGuardarAsistencia";
+            this.btnGuardarAsistencia.Size = new System.Drawing.Size(81, 33);
+            this.btnGuardarAsistencia.TabIndex = 43;
+            this.btnGuardarAsistencia.Text = "Guardar";
+            this.btnGuardarAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardarAsistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardarAsistencia.UseVisualStyleBackColor = false;
+            this.btnGuardarAsistencia.Click += new System.EventHandler(this.btnGuardarAsistencia_Click);
             // 
             // label6
             // 
@@ -160,47 +154,63 @@
             this.label5.TabIndex = 59;
             this.label5.Text = "Inicio";
             // 
-            // dtpFechaFinContraton
+            // dtpHoraFinAsistencia
             // 
-            this.dtpFechaFinContraton.Location = new System.Drawing.Point(175, 190);
-            this.dtpFechaFinContraton.MinDate = new System.DateTime(2024, 5, 6, 0, 0, 0, 0);
-            this.dtpFechaFinContraton.Name = "dtpFechaFinContraton";
-            this.dtpFechaFinContraton.Size = new System.Drawing.Size(126, 20);
-            this.dtpFechaFinContraton.TabIndex = 58;
+            this.dtpHoraFinAsistencia.CustomFormat = "";
+            this.dtpHoraFinAsistencia.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraFinAsistencia.Location = new System.Drawing.Point(175, 190);
+            this.dtpHoraFinAsistencia.MinDate = new System.DateTime(2024, 5, 6, 0, 0, 0, 0);
+            this.dtpHoraFinAsistencia.Name = "dtpHoraFinAsistencia";
+            this.dtpHoraFinAsistencia.ShowUpDown = true;
+            this.dtpHoraFinAsistencia.Size = new System.Drawing.Size(126, 20);
+            this.dtpHoraFinAsistencia.TabIndex = 58;
             // 
-            // dtpFechaIniciContrato
+            // dtpHoraInicioAsistencia
             // 
-            this.dtpFechaIniciContrato.Location = new System.Drawing.Point(46, 190);
-            this.dtpFechaIniciContrato.Name = "dtpFechaIniciContrato";
-            this.dtpFechaIniciContrato.Size = new System.Drawing.Size(123, 20);
-            this.dtpFechaIniciContrato.TabIndex = 57;
+            this.dtpHoraInicioAsistencia.CustomFormat = "";
+            this.dtpHoraInicioAsistencia.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraInicioAsistencia.Location = new System.Drawing.Point(46, 190);
+            this.dtpHoraInicioAsistencia.Name = "dtpHoraInicioAsistencia";
+            this.dtpHoraInicioAsistencia.ShowUpDown = true;
+            this.dtpHoraInicioAsistencia.Size = new System.Drawing.Size(123, 20);
+            this.dtpHoraInicioAsistencia.TabIndex = 57;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(46, 151);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(255, 20);
-            this.dateTimePicker1.TabIndex = 61;
+            this.dtpFecha.Location = new System.Drawing.Point(46, 151);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(255, 20);
+            this.dtpFecha.TabIndex = 61;
+            // 
+            // cboEmpleado
+            // 
+            this.cboEmpleado.FormattingEnabled = true;
+            this.cboEmpleado.Location = new System.Drawing.Point(46, 112);
+            this.cboEmpleado.Name = "cboEmpleado";
+            this.cboEmpleado.Size = new System.Drawing.Size(254, 21);
+            this.cboEmpleado.TabIndex = 63;
             // 
             // FrmAgregarAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 309);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.cboEmpleado);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dtpFechaFinContraton);
-            this.Controls.Add(this.dtpFechaIniciContrato);
+            this.Controls.Add(this.dtpHoraFinAsistencia);
+            this.Controls.Add(this.dtpHoraInicioAsistencia);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblFecha);
-            this.Controls.Add(this.txtNombreCargo);
-            this.Controls.Add(this.btnCancelarCargo);
-            this.Controls.Add(this.btnLimpiarCargo);
-            this.Controls.Add(this.btnGuardarCargo);
+            this.Controls.Add(this.btnCancelarAsistencia);
+            this.Controls.Add(this.btnLimpiarAsistencia);
+            this.Controls.Add(this.btnGuardarAsistencia);
             this.Name = "FrmAgregarAsistencia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarAsistencia";
+            this.Load += new System.EventHandler(this.FrmAgregarAsistencia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,14 +221,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.TextBox txtNombreCargo;
-        private FontAwesome.Sharp.IconButton btnCancelarCargo;
-        private FontAwesome.Sharp.IconButton btnLimpiarCargo;
-        private FontAwesome.Sharp.IconButton btnGuardarCargo;
+        private FontAwesome.Sharp.IconButton btnCancelarAsistencia;
+        private FontAwesome.Sharp.IconButton btnLimpiarAsistencia;
+        private FontAwesome.Sharp.IconButton btnGuardarAsistencia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dtpFechaFinContraton;
-        private System.Windows.Forms.DateTimePicker dtpFechaIniciContrato;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpHoraFinAsistencia;
+        private System.Windows.Forms.DateTimePicker dtpHoraInicioAsistencia;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.ComboBox cboEmpleado;
     }
 }

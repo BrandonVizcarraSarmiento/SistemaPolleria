@@ -46,6 +46,7 @@
             // 
             // dgvAsistencia
             // 
+            this.dgvAsistencia.AllowUserToAddRows = false;
             this.dgvAsistencia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -74,7 +75,7 @@
             this.dgvAsistencia.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAsistencia.EnableHeadersVisualStyles = false;
             this.dgvAsistencia.GridColor = System.Drawing.Color.SteelBlue;
-            this.dgvAsistencia.Location = new System.Drawing.Point(88, 132);
+            this.dgvAsistencia.Location = new System.Drawing.Point(59, 132);
             this.dgvAsistencia.Margin = new System.Windows.Forms.Padding(2);
             this.dgvAsistencia.Name = "dgvAsistencia";
             this.dgvAsistencia.ReadOnly = true;
@@ -90,7 +91,7 @@
             this.dgvAsistencia.RowHeadersWidth = 51;
             this.dgvAsistencia.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.LightSeaGreen;
             this.dgvAsistencia.RowTemplate.Height = 24;
-            this.dgvAsistencia.Size = new System.Drawing.Size(543, 306);
+            this.dgvAsistencia.Size = new System.Drawing.Size(604, 306);
             this.dgvAsistencia.TabIndex = 25;
             // 
             // panel3
@@ -125,6 +126,7 @@
             this.btnNuevoAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevoAsistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNuevoAsistencia.UseVisualStyleBackColor = false;
+            this.btnNuevoAsistencia.Click += new System.EventHandler(this.btnNuevoAsistencia_Click);
             // 
             // btnEditarAsistencia
             // 
@@ -146,6 +148,7 @@
             this.btnEditarAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditarAsistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditarAsistencia.UseVisualStyleBackColor = false;
+            this.btnEditarAsistencia.Click += new System.EventHandler(this.btnEditarAsistencia_Click);
             // 
             // btnEliminarAsistencia
             // 
@@ -167,6 +170,7 @@
             this.btnEliminarAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminarAsistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminarAsistencia.UseVisualStyleBackColor = false;
+            this.btnEliminarAsistencia.Click += new System.EventHandler(this.btnEliminarAsistencia_Click);
             // 
             // panelBuscarCargos
             // 
@@ -205,6 +209,7 @@
             this.btnBuscarAsistencias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarAsistencias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuscarAsistencias.UseVisualStyleBackColor = false;
+            this.btnBuscarAsistencias.Click += new System.EventHandler(this.btnBuscarAsistencias_Click);
             // 
             // FrmAsistencia
             // 

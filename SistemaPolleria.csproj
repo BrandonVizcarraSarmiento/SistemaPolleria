@@ -60,8 +60,11 @@
   <ItemGroup>
     <Compile Include="common\ConnectionString.cs" />
     <Compile Include="common\EntidadAsistencia.cs" />
+    <Compile Include="common\EntidadEmpleado.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
+    <Compile Include="datos\DatosEmpleado.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
+    <Compile Include="negocios\NegociosEmpleado.cs" />
     <Compile Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +76,30 @@
     </Compile>
     <Compile Include="presentacion\gestion empleados\Asistencia\FrmAsistencia.Designer.cs">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\Asistencia\FrmEditarAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\Asistencia\FrmEditarAsistencia.Designer.cs">
+      <DependentUpon>FrmEditarAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\empleado\FrmAgregarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\empleado\FrmAgregarEmpleado.Designer.cs">
+      <DependentUpon>FrmAgregarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\empleado\FrmEditarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\empleado\FrmEditarEmpleado.Designer.cs">
+      <DependentUpon>FrmEditarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\empleado\FrmEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\empleado\FrmEmpleado.Designer.cs">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.cs">
       <SubType>Form</SubType>
@@ -117,6 +144,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestion empleados\Asistencia\FrmAsistencia.resx">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\Asistencia\FrmEditarAsistencia.resx">
+      <DependentUpon>FrmEditarAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmAgregarEmpleado.resx">
+      <DependentUpon>FrmAgregarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmEditarEmpleado.resx">
+      <DependentUpon>FrmEditarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmEmpleado.resx">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.resx">
       <DependentUpon>FrmDetallePedido.cs</DependentUpon>

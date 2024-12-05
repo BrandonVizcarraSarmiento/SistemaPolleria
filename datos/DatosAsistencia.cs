@@ -9,40 +9,27 @@ namespace SistemaPolleria.Data.Asistencia
 {
     internal class DatosAsistencia
     {
-        
-        public EntidadAsistencia ObtenerAsistencia(int asistenciaID)
+        public DataTable ObtenerTodasAsistencias()
         {
-
             try
             {
-                using (SqlCommand cmd = new SqlCommand("obtenerAsistencia", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("obtenerTodasAsistencias", ConnectionString.Singleton.SqlConnectionFactory))
                 {
+                    DataTable dtData = new DataTable();
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@AsistenciaID", asistenciaID);
 
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            return new EntidadAsistencia(
-                                asistenciaID,
-                                Convert.ToInt32(reader["EmpleadoID"]),
-                                Convert.ToDateTime(reader["Fecha"]),
-                                TimeSpan.Parse(reader["HoraEntrada"].ToString()),
-                                TimeSpan.Parse(reader["HoraSalida"].ToString())
-                            );
-                        }
-                    }
+                    SqlDataAdapter sqlSda = new SqlDataAdapter(cmd);
+                    sqlSda.Fill(dtData);
+
+                    return dtData;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return null;
             }
-
-            return null;
         }
-
         public int InsertarAsistencia(EntidadAsistencia asistencia)
         {
             try
@@ -107,19 +94,20 @@ namespace SistemaPolleria.Data.Asistencia
             }
         }
 
-        public DataTable ObtenerTodasAsistencias()
+        public DataTable ObtenerAsistenciaPorNombre(string nombreEmpleado)
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("obtenerTodasAsistencias", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("obtenerAsistenciaPorNombre", ConnectionString.Singleton.SqlConnectionFactory))
                 {
-                    DataTable dtData = new DataTable();
                     cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@NombreEmpleado", nombreEmpleado);
 
-                    SqlDataAdapter sqlSda = new SqlDataAdapter(cmd);
-                    sqlSda.Fill(dtData);
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(dt);
 
-                    return dtData;
+                    return dt;
                 }
             }
             catch (Exception ex)
