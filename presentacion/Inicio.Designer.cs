@@ -309,6 +309,7 @@
             this.btnPago.Tag = "";
             this.btnPago.Text = "Pagos";
             this.btnPago.UseVisualStyleBackColor = false;
+            this.btnPago.Click += new System.EventHandler(this.btnPago_Click);
             // 
             // btnCaja
             // 

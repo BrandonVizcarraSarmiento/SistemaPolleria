@@ -64,18 +64,24 @@
     <Compile Include="common\EntidadEmpleado.cs" />
     <Compile Include="common\EntidadEvalucion.cs" />
     <Compile Include="common\EntidadHorario.cs" />
+    <Compile Include="common\EntidadPagos.cs" />
+    <Compile Include="common\EntidadPedidos.cs" />
     <Compile Include="common\EntidadTurno.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
     <Compile Include="datos\DatosCaja.cs" />
     <Compile Include="datos\DatosEmpleado.cs" />
     <Compile Include="datos\DatosEvalucion.cs" />
     <Compile Include="datos\DatosHorario.cs" />
+    <Compile Include="datos\DatosPagos.cs" />
+    <Compile Include="datos\DatosPedidos.cs" />
     <Compile Include="datos\DatosTurno.cs" />
     <Compile Include="negocios\NegocioCaja.cs" />
     <Compile Include="negocios\NegocioEvalucion.cs" />
     <Compile Include="negocios\NegocioHorario.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
     <Compile Include="negocios\NegociosEmpleado.cs" />
+    <Compile Include="negocios\NegociosPagos.cs" />
+    <Compile Include="negocios\NegociosPedidos.cs" />
     <Compile Include="negocios\NegocioTurno.cs" />
     <Compile Include="presentacion\cajaPagos\caja\FrmAgregarCaja.cs">
       <SubType>Form</SubType>
@@ -94,6 +100,24 @@
     </Compile>
     <Compile Include="presentacion\cajaPagos\caja\FrmEditarCaja.Designer.cs">
       <DependentUpon>FrmEditarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\pagos\FrmAgregarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\pagos\FrmAgregarPago.Designer.cs">
+      <DependentUpon>FrmAgregarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\pagos\FrmEditarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\pagos\FrmEditarPago.Designer.cs">
+      <DependentUpon>FrmEditarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\pagos\FrmPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\pagos\FrmPago.Designer.cs">
+      <DependentUpon>FrmPago.cs</DependentUpon>
     </Compile>
     <Compile Include="presentacion\gestionEmpleados\Asistencia\FrmAgregarAsistencia.cs">
       <SubType>Form</SubType>
@@ -231,6 +255,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\cajaPagos\caja\FrmEditarCaja.resx">
       <DependentUpon>FrmEditarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\cajaPagos\pagos\FrmAgregarPago.resx">
+      <DependentUpon>FrmAgregarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\cajaPagos\pagos\FrmEditarPago.resx">
+      <DependentUpon>FrmEditarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\cajaPagos\pagos\FrmPago.resx">
+      <DependentUpon>FrmPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionEmpleados\Asistencia\FrmAgregarAsistencia.resx">
       <DependentUpon>FrmAgregarAsistencia.cs</DependentUpon>
