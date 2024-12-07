@@ -81,6 +81,7 @@
             this.btnBuscarEvalucion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarEvalucion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuscarEvalucion.UseVisualStyleBackColor = false;
+            this.btnBuscarEvalucion.Click += new System.EventHandler(this.btnBuscarEvalucion_Click);
             // 
             // panel3
             // 
@@ -136,6 +137,7 @@
             this.btnEditarEvalucion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditarEvalucion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditarEvalucion.UseVisualStyleBackColor = false;
+            this.btnEditarEvalucion.Click += new System.EventHandler(this.btnEditarEvalucion_Click);
             // 
             // btnEliminarEvalucion
             // 
@@ -157,6 +159,7 @@
             this.btnEliminarEvalucion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminarEvalucion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminarEvalucion.UseVisualStyleBackColor = false;
+            this.btnEliminarEvalucion.Click += new System.EventHandler(this.btnEliminarEvalucion_Click);
             // 
             // dgvEvalucion
             // 

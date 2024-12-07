@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using SistemaPolleria.presentacion.cajaPagos.caja;
 using SistemaPolleria.presentacion.gestion_empleados.carpetas;
 using SistemaPolleria.presentacion.gestion_empleados.empleado;
 using SistemaPolleria.presentacion.gestion_empleados.evaluciones;
@@ -209,6 +210,11 @@ namespace SistemaPolleria.presentacion
         private void btnEvaluciones_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconButton)sender, new FrmEvalucion());
+        }
+
+        private void btnCaja_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmCaja());
         }
     }
 }

@@ -44,15 +44,20 @@
             // 
             // cboCalificacion
             // 
+            this.cboCalificacion.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cboCalificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCalificacion.FormattingEnabled = true;
             this.cboCalificacion.Items.AddRange(new object[] {
-            "Lunes",
-            "Martes",
-            "Miercoles",
-            "Jueves",
-            "Viernes",
-            "Sabado",
-            "Domingo"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.cboCalificacion.Location = new System.Drawing.Point(53, 171);
             this.cboCalificacion.Name = "cboCalificacion";
             this.cboCalificacion.Size = new System.Drawing.Size(254, 21);
@@ -156,6 +161,7 @@
             this.btnGuardarEvalucion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardarEvalucion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardarEvalucion.UseVisualStyleBackColor = false;
+            this.btnGuardarEvalucion.Click += new System.EventHandler(this.btnGuardarEvalucion_Click);
             // 
             // dtpFecha
             // 

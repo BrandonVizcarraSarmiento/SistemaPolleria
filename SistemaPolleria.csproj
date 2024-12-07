@@ -60,108 +60,129 @@
   <ItemGroup>
     <Compile Include="common\ConnectionString.cs" />
     <Compile Include="common\EntidadAsistencia.cs" />
+    <Compile Include="common\EntidadCaja.cs" />
     <Compile Include="common\EntidadEmpleado.cs" />
     <Compile Include="common\EntidadEvalucion.cs" />
     <Compile Include="common\EntidadHorario.cs" />
     <Compile Include="common\EntidadTurno.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
+    <Compile Include="datos\DatosCaja.cs" />
     <Compile Include="datos\DatosEmpleado.cs" />
     <Compile Include="datos\DatosEvalucion.cs" />
     <Compile Include="datos\DatosHorario.cs" />
     <Compile Include="datos\DatosTurno.cs" />
+    <Compile Include="negocios\NegocioCaja.cs" />
     <Compile Include="negocios\NegocioEvalucion.cs" />
     <Compile Include="negocios\NegocioHorario.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
     <Compile Include="negocios\NegociosEmpleado.cs" />
     <Compile Include="negocios\NegocioTurno.cs" />
-    <Compile Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.cs">
+    <Compile Include="presentacion\cajaPagos\caja\FrmAgregarCaja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.Designer.cs">
+    <Compile Include="presentacion\cajaPagos\caja\FrmAgregarCaja.Designer.cs">
+      <DependentUpon>FrmAgregarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\caja\FrmCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\caja\FrmCaja.Designer.cs">
+      <DependentUpon>FrmCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\caja\FrmEditarCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\cajaPagos\caja\FrmEditarCaja.Designer.cs">
+      <DependentUpon>FrmEditarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionEmpleados\Asistencia\FrmAgregarAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionEmpleados\Asistencia\FrmAgregarAsistencia.Designer.cs">
       <DependentUpon>FrmAgregarAsistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\Asistencia\FrmAsistencia.cs">
+    <Compile Include="presentacion\gestionEmpleados\Asistencia\FrmAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\Asistencia\FrmAsistencia.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\Asistencia\FrmAsistencia.Designer.cs">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\Asistencia\FrmEditarAsistencia.cs">
+    <Compile Include="presentacion\gestionEmpleados\Asistencia\FrmEditarAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\Asistencia\FrmEditarAsistencia.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\Asistencia\FrmEditarAsistencia.Designer.cs">
       <DependentUpon>FrmEditarAsistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\empleado\FrmAgregarEmpleado.cs">
+    <Compile Include="presentacion\gestionEmpleados\empleado\FrmAgregarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\empleado\FrmAgregarEmpleado.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\empleado\FrmAgregarEmpleado.Designer.cs">
       <DependentUpon>FrmAgregarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\empleado\FrmEditarEmpleado.cs">
+    <Compile Include="presentacion\gestionEmpleados\empleado\FrmEditarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\empleado\FrmEditarEmpleado.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\empleado\FrmEditarEmpleado.Designer.cs">
       <DependentUpon>FrmEditarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\empleado\FrmEmpleado.cs">
+    <Compile Include="presentacion\gestionEmpleados\empleado\FrmEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\empleado\FrmEmpleado.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\empleado\FrmEmpleado.Designer.cs">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\evaluciones\FrmAgregarEvalucion.cs">
+    <Compile Include="presentacion\gestionEmpleados\evaluciones\FrmAgregarEvalucion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\evaluciones\FrmAgregarEvalucion.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\evaluciones\FrmAgregarEvalucion.Designer.cs">
       <DependentUpon>FrmAgregarEvalucion.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEditarEvalucion.cs">
+    <Compile Include="presentacion\gestionEmpleados\evaluciones\FrmEditarEvalucion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEditarEvalucion.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\evaluciones\FrmEditarEvalucion.Designer.cs">
       <DependentUpon>FrmEditarEvalucion.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEvalucion.cs">
+    <Compile Include="presentacion\gestionEmpleados\evaluciones\FrmEvalucion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEvalucion.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\evaluciones\FrmEvalucion.Designer.cs">
       <DependentUpon>FrmEvalucion.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.cs">
+    <Compile Include="presentacion\gestionEmpleados\horarios\FrmAgregarHorario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\horarios\FrmAgregarHorario.Designer.cs">
       <DependentUpon>FrmAgregarHorario.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\horarios\FrmEditarHorario.cs">
+    <Compile Include="presentacion\gestionEmpleados\horarios\FrmEditarHorario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\horarios\FrmEditarHorario.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\horarios\FrmEditarHorario.Designer.cs">
       <DependentUpon>FrmEditarHorario.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\horarios\FrmHorario.cs">
+    <Compile Include="presentacion\gestionEmpleados\horarios\FrmHorario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\horarios\FrmHorario.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\horarios\FrmHorario.Designer.cs">
       <DependentUpon>FrmHorario.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\turnos\FrmAgregarTurno.cs">
+    <Compile Include="presentacion\gestionEmpleados\turnos\FrmAgregarTurno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\turnos\FrmAgregarTurno.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\turnos\FrmAgregarTurno.Designer.cs">
       <DependentUpon>FrmAgregarTurno.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\turnos\FrmEditarTurno.cs">
+    <Compile Include="presentacion\gestionEmpleados\turnos\FrmEditarTurno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\turnos\FrmEditarTurno.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\turnos\FrmEditarTurno.Designer.cs">
       <DependentUpon>FrmEditarTurno.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\turnos\FrmTurno.cs">
+    <Compile Include="presentacion\gestionEmpleados\turnos\FrmTurno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\gestion empleados\turnos\FrmTurno.Designer.cs">
+    <Compile Include="presentacion\gestionEmpleados\turnos\FrmTurno.Designer.cs">
       <DependentUpon>FrmTurno.cs</DependentUpon>
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.cs">
@@ -202,49 +223,58 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.resx">
+    <EmbeddedResource Include="presentacion\cajaPagos\caja\FrmAgregarCaja.resx">
+      <DependentUpon>FrmAgregarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\cajaPagos\caja\FrmCaja.resx">
+      <DependentUpon>FrmCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\cajaPagos\caja\FrmEditarCaja.resx">
+      <DependentUpon>FrmEditarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionEmpleados\Asistencia\FrmAgregarAsistencia.resx">
       <DependentUpon>FrmAgregarAsistencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\Asistencia\FrmAsistencia.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\Asistencia\FrmAsistencia.resx">
       <DependentUpon>FrmAsistencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\Asistencia\FrmEditarAsistencia.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\Asistencia\FrmEditarAsistencia.resx">
       <DependentUpon>FrmEditarAsistencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmAgregarEmpleado.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\empleado\FrmAgregarEmpleado.resx">
       <DependentUpon>FrmAgregarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmEditarEmpleado.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\empleado\FrmEditarEmpleado.resx">
       <DependentUpon>FrmEditarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmEmpleado.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\empleado\FrmEmpleado.resx">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\evaluciones\FrmAgregarEvalucion.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\evaluciones\FrmAgregarEvalucion.resx">
       <DependentUpon>FrmAgregarEvalucion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\evaluciones\FrmEditarEvalucion.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\evaluciones\FrmEditarEvalucion.resx">
       <DependentUpon>FrmEditarEvalucion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\evaluciones\FrmEvalucion.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\evaluciones\FrmEvalucion.resx">
       <DependentUpon>FrmEvalucion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\horarios\FrmAgregarHorario.resx">
       <DependentUpon>FrmAgregarHorario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmEditarHorario.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\horarios\FrmEditarHorario.resx">
       <DependentUpon>FrmEditarHorario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmHorario.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\horarios\FrmHorario.resx">
       <DependentUpon>FrmHorario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\turnos\FrmAgregarTurno.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\turnos\FrmAgregarTurno.resx">
       <DependentUpon>FrmAgregarTurno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\turnos\FrmEditarTurno.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\turnos\FrmEditarTurno.resx">
       <DependentUpon>FrmEditarTurno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\gestion empleados\turnos\FrmTurno.resx">
+    <EmbeddedResource Include="presentacion\gestionEmpleados\turnos\FrmTurno.resx">
       <DependentUpon>FrmTurno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.resx">
