@@ -11,18 +11,21 @@ using System.Windows.Forms;
 
 namespace SistemaPolleria.datos
 {
-    internal class DatosHorario
+    public class DatosEvalucion
     {
-        public DataTable ObtenerTodosHorarios()
+        // Obtener todas las evaluaciones
+        public DataTable ObtenerTodasEvaluaciones()
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("obtenerTodosHorarios", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("obtenerTodasEvaluaciones", ConnectionString.Singleton.SqlConnectionFactory))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
                     DataTable dtData = new DataTable();
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    adapter.Fill(dtData);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    SqlDataAdapter sqlSda = new SqlDataAdapter(cmd);
+                    sqlSda.Fill(dtData);
+
                     return dtData;
                 }
             }
@@ -33,17 +36,18 @@ namespace SistemaPolleria.datos
             }
         }
 
-        public int InsertarHorario(EntidadHorario horario)
+        // Insertar una nueva evaluación
+        public int InsertarEvaluacion(EntidadEvaluacion evaluacion)
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("insertarHorario", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("insertarEvaluacion", ConnectionString.Singleton.SqlConnectionFactory))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@EmpleadoID", horario.EmpleadoID);
-                    cmd.Parameters.AddWithValue("@HoraInicio", horario.HoraInicio);
-                    cmd.Parameters.AddWithValue("@HoraFin", horario.HoraFin);
-                    cmd.Parameters.AddWithValue("@DiaSemana", horario.DiaSemana);
+                    cmd.Parameters.AddWithValue("@EmpleadoID", evaluacion.EmpleadoID);
+                    cmd.Parameters.AddWithValue("@Fecha", evaluacion.Fecha);
+                    cmd.Parameters.AddWithValue("@Calificacion", evaluacion.Calificacion);
+                    cmd.Parameters.AddWithValue("@Comentario", evaluacion.Comentario);
 
                     return cmd.ExecuteNonQuery();
                 }
@@ -55,18 +59,19 @@ namespace SistemaPolleria.datos
             }
         }
 
-        public int EditarHorario(EntidadHorario horario)
+        // Editar una evaluación existente
+        public int EditarEvaluacion(EntidadEvaluacion evaluacion)
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("editarHorario", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("editarEvaluacion", ConnectionString.Singleton.SqlConnectionFactory))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@HorarioID", horario.HorarioID);
-                    cmd.Parameters.AddWithValue("@EmpleadoID", horario.EmpleadoID);
-                    cmd.Parameters.AddWithValue("@HoraInicio", horario.HoraInicio);
-                    cmd.Parameters.AddWithValue("@HoraFin", horario.HoraFin);
-                    cmd.Parameters.AddWithValue("@DiaSemana", horario.DiaSemana);
+                    cmd.Parameters.AddWithValue("@EvaluacionID", evaluacion.EvaluacionID);
+                    cmd.Parameters.AddWithValue("@EmpleadoID", evaluacion.EmpleadoID);
+                    cmd.Parameters.AddWithValue("@Fecha", evaluacion.Fecha);
+                    cmd.Parameters.AddWithValue("@Calificacion", evaluacion.Calificacion);
+                    cmd.Parameters.AddWithValue("@Comentario", evaluacion.Comentario);
 
                     return cmd.ExecuteNonQuery();
                 }
@@ -78,14 +83,16 @@ namespace SistemaPolleria.datos
             }
         }
 
-        public int EliminarHorario(int horarioID)
+        // Eliminar una evaluación
+        public int EliminarEvaluacion(int evaluacionID)
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("eliminarHorario", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("eliminarEvaluacion", ConnectionString.Singleton.SqlConnectionFactory))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@HorarioID", horarioID);
+                    cmd.Parameters.AddWithValue("@EvaluacionID", evaluacionID);
+
                     return cmd.ExecuteNonQuery();
                 }
             }
@@ -95,11 +102,13 @@ namespace SistemaPolleria.datos
                 return 0;
             }
         }
-        public DataTable ObtenerHorariosPorNombre(string nombreEmpleado)
+
+        // Obtener evaluaciones por nombre del empleado
+        public DataTable ObtenerEvaluacionesPorNombre(string nombreEmpleado)
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("obtenerHorariosPorNombre", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("obtenerEvaluacionesPorNombre", ConnectionString.Singleton.SqlConnectionFactory))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@NombreEmpleado", nombreEmpleado);

@@ -66,6 +66,7 @@ namespace SistemaPolleria.negocio.asistencia
         {
             return _datosAsistencia.EliminarAsistencia(idAsistencia);
         }
+        // Buscar asistencia
         public DataTable ObtenerAsistenciaPorNombreN(string nombreEmpleado)
         {
             return _datosAsistencia.ObtenerAsistenciaPorNombre(nombreEmpleado);

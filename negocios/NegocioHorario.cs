@@ -57,5 +57,9 @@ namespace SistemaPolleria.negocios
 
             return _datosHorario.EliminarHorario(horarioID);
         }
+        public DataTable ObtenerHorariosPorNombreN(string nombreEmpleado)
+        {
+            return _datosHorario.ObtenerHorariosPorNombre(nombreEmpleado);
+        }
     }
 }

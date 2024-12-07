@@ -61,13 +61,19 @@
     <Compile Include="common\ConnectionString.cs" />
     <Compile Include="common\EntidadAsistencia.cs" />
     <Compile Include="common\EntidadEmpleado.cs" />
+    <Compile Include="common\EntidadEvalucion.cs" />
     <Compile Include="common\EntidadHorario.cs" />
+    <Compile Include="common\EntidadTurno.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
     <Compile Include="datos\DatosEmpleado.cs" />
+    <Compile Include="datos\DatosEvalucion.cs" />
     <Compile Include="datos\DatosHorario.cs" />
+    <Compile Include="datos\DatosTurno.cs" />
+    <Compile Include="negocios\NegocioEvalucion.cs" />
     <Compile Include="negocios\NegocioHorario.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
     <Compile Include="negocios\NegociosEmpleado.cs" />
+    <Compile Include="negocios\NegocioTurno.cs" />
     <Compile Include="presentacion\gestion empleados\Asistencia\FrmAgregarAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,24 @@
     <Compile Include="presentacion\gestion empleados\empleado\FrmEmpleado.Designer.cs">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="presentacion\gestion empleados\evaluciones\FrmAgregarEvalucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\evaluciones\FrmAgregarEvalucion.Designer.cs">
+      <DependentUpon>FrmAgregarEvalucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEditarEvalucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEditarEvalucion.Designer.cs">
+      <DependentUpon>FrmEditarEvalucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEvalucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\evaluciones\FrmEvalucion.Designer.cs">
+      <DependentUpon>FrmEvalucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +145,24 @@
     </Compile>
     <Compile Include="presentacion\gestion empleados\horarios\FrmHorario.Designer.cs">
       <DependentUpon>FrmHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\turnos\FrmAgregarTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\turnos\FrmAgregarTurno.Designer.cs">
+      <DependentUpon>FrmAgregarTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\turnos\FrmEditarTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\turnos\FrmEditarTurno.Designer.cs">
+      <DependentUpon>FrmEditarTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\turnos\FrmTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestion empleados\turnos\FrmTurno.Designer.cs">
+      <DependentUpon>FrmTurno.cs</DependentUpon>
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.cs">
       <SubType>Form</SubType>
@@ -178,6 +220,15 @@
     <EmbeddedResource Include="presentacion\gestion empleados\empleado\FrmEmpleado.resx">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\evaluciones\FrmAgregarEvalucion.resx">
+      <DependentUpon>FrmAgregarEvalucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\evaluciones\FrmEditarEvalucion.resx">
+      <DependentUpon>FrmEditarEvalucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\evaluciones\FrmEvalucion.resx">
+      <DependentUpon>FrmEvalucion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmAgregarHorario.resx">
       <DependentUpon>FrmAgregarHorario.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +237,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestion empleados\horarios\FrmHorario.resx">
       <DependentUpon>FrmHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\turnos\FrmAgregarTurno.resx">
+      <DependentUpon>FrmAgregarTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\turnos\FrmEditarTurno.resx">
+      <DependentUpon>FrmEditarTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestion empleados\turnos\FrmTurno.resx">
+      <DependentUpon>FrmTurno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.resx">
       <DependentUpon>FrmDetallePedido.cs</DependentUpon>

@@ -733,6 +733,7 @@
             this.btnEvaluciones.Tag = "";
             this.btnEvaluciones.Text = "Evaluaciones";
             this.btnEvaluciones.UseVisualStyleBackColor = false;
+            this.btnEvaluciones.Click += new System.EventHandler(this.btnEvaluciones_Click);
             // 
             // btnAsistencias
             // 
@@ -770,6 +771,7 @@
             this.btnTurnos.Tag = "";
             this.btnTurnos.Text = "Turnos";
             this.btnTurnos.UseVisualStyleBackColor = false;
+            this.btnTurnos.Click += new System.EventHandler(this.btnTurnos_Click);
             // 
             // btnHorarios
             // 

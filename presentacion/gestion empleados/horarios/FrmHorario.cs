@@ -44,7 +44,9 @@ namespace SistemaPolleria.presentacion.gestion_empleados.horarios
         {
             FrmAgregarHorario agregarHorarioForm = new FrmAgregarHorario();
             agregarHorarioForm.ShowDialog();
-            CargarHorarios(); // Refresca los datos al volver
+
+            // Refresca los datos al volver
+            CargarHorarios(); 
         }
 
         private void btnEditarHorario_Click(object sender, EventArgs e)
@@ -116,7 +118,38 @@ namespace SistemaPolleria.presentacion.gestion_empleados.horarios
 
         private void btnBuscarHorario_Click(object sender, EventArgs e)
         {
+            string nombreEmpleado = txtBuscarHorario.Text.Trim();
 
+            if (!string.IsNullOrEmpty(nombreEmpleado))
+            {
+                // Buscar horarios por nombre de empleado
+                DataTable horarios = _negocioHorario.ObtenerHorariosPorNombreN(nombreEmpleado);
+
+                if (horarios != null && horarios.Rows.Count > 0)
+                {
+                    // Mostrar resultados en el DataGridView
+                    dgvHorario.DataSource = horarios; 
+                }
+                else
+                {
+                    MessageBox.Show("No se encontraron horarios para el empleado ingresado.");
+                }
+            }
+            else
+            {
+                // Si el campo está vacío, cargar todos los horarios
+                DataTable todosHorarios = _negocioHorario.ObtenerTodosHorariosN();
+
+                if (todosHorarios != null && todosHorarios.Rows.Count > 0)
+                {
+                    // Mostrar todos los horarios
+                    dgvHorario.DataSource = todosHorarios; 
+                }
+                else
+                {
+                    MessageBox.Show("No hay horarios registrados.");
+                }
+            }
         }
     }
 }
