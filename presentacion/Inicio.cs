@@ -10,6 +10,8 @@ using SistemaPolleria.presentacion.gestionPedidosVentas.detallePedido;
 using SistemaPolleria.presentacion.gestionPedidosVentas.entregas;
 using SistemaPolleria.presentacion.gestionPedidosVentas.pagos;
 using SistemaPolleria.presentacion.gestionPedidosVentas.pedidos;
+using SistemaPolleria.presentacion.gestionPlatosCocina.ingredientes;
+using SistemaPolleria.presentacion.gestionPlatosCocina.platos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -263,6 +265,16 @@ namespace SistemaPolleria.presentacion
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnPlatos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmPlatos());
+        }
+
+        private void btnIngredientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmIngredientes());
         }
     }
 }

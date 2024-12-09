@@ -61,29 +61,56 @@
     <Compile Include="common\ConnectionString.cs" />
     <Compile Include="common\EntidadAsistencia.cs" />
     <Compile Include="common\EntidadCaja.cs" />
+    <Compile Include="common\EntidadDetallesPedido.cs" />
     <Compile Include="common\EntidadEmpleado.cs" />
+    <Compile Include="common\EntidadEntregas.cs" />
+    <Compile Include="common\EntidadEquipos.cs" />
     <Compile Include="common\EntidadEvalucion.cs" />
     <Compile Include="common\EntidadHorario.cs" />
+    <Compile Include="common\EntidadIngrediente.cs" />
+    <Compile Include="common\EntidadMantenimientos.cs" />
+    <Compile Include="common\EntidadMesas.cs" />
+    <Compile Include="common\EntidadOrdenesMesa.cs" />
     <Compile Include="common\EntidadPagos.cs" />
     <Compile Include="common\EntidadPedidos.cs" />
+    <Compile Include="common\EntidadPlato.cs" />
+    <Compile Include="common\EntidadReservas.cs" />
     <Compile Include="common\EntidadTurno.cs" />
     <Compile Include="common\EntidadUsuario.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
     <Compile Include="datos\DatosCaja.cs" />
+    <Compile Include="datos\DatosDetallesPedido.cs" />
     <Compile Include="datos\DatosEmpleado.cs" />
+    <Compile Include="datos\DatosEntregas.cs" />
+    <Compile Include="datos\DatosEquipos.cs" />
     <Compile Include="datos\DatosEvalucion.cs" />
     <Compile Include="datos\DatosHorario.cs" />
+    <Compile Include="datos\DatosIngredientes.cs" />
+    <Compile Include="datos\DatosMantenimientos.cs" />
+    <Compile Include="datos\DatosMesas.cs" />
+    <Compile Include="datos\DatosOrdenesMesa.cs" />
     <Compile Include="datos\DatosPagos.cs" />
     <Compile Include="datos\DatosPedidos.cs" />
+    <Compile Include="datos\DatosPlatos.cs" />
+    <Compile Include="datos\DatosReservas.cs" />
     <Compile Include="datos\DatosTurno.cs" />
     <Compile Include="datos\DatosUsuarios.cs" />
     <Compile Include="negocios\NegocioCaja.cs" />
     <Compile Include="negocios\NegocioEvalucion.cs" />
     <Compile Include="negocios\NegocioHorario.cs" />
+    <Compile Include="negocios\NegocioIngredientes.cs" />
+    <Compile Include="negocios\NegocioPlatos.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
+    <Compile Include="negocios\NegociosDetallesPedido.cs" />
     <Compile Include="negocios\NegociosEmpleado.cs" />
+    <Compile Include="negocios\NegociosEntregas.cs" />
+    <Compile Include="negocios\NegociosEquipos.cs" />
+    <Compile Include="negocios\NegociosMantenimientos .cs" />
+    <Compile Include="negocios\NegociosMesas.cs" />
+    <Compile Include="negocios\NegociosOrdenesMesa.cs" />
     <Compile Include="negocios\NegociosPagos.cs" />
     <Compile Include="negocios\NegociosPedidos.cs" />
+    <Compile Include="negocios\NegociosReservas.cs" />
     <Compile Include="negocios\NegociosUsuarios.cs" />
     <Compile Include="negocios\NegocioTurno.cs" />
     <Compile Include="presentacion\cajaPagos\caja\FrmAgregarCaja.cs">
@@ -236,6 +263,42 @@
     <Compile Include="presentacion\gestionPedidosVentas\pedidos\FrmPedidos.Designer.cs">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\ingredientes\FrmAgregarIngrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\ingredientes\FrmAgregarIngrediente.Designer.cs">
+      <DependentUpon>FrmAgregarIngrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\ingredientes\FrmEditarIngrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\ingredientes\FrmEditarIngrediente.Designer.cs">
+      <DependentUpon>FrmEditarIngrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\ingredientes\FrmIngredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\ingredientes\FrmIngredientes.Designer.cs">
+      <DependentUpon>FrmIngredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\platos\FrmAgregarPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\platos\FrmAgregarPlato.Designer.cs">
+      <DependentUpon>FrmAgregarPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\platos\FrmEditarPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\platos\FrmEditarPlato.Designer.cs">
+      <DependentUpon>FrmEditarPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\platos\FrmPlatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPlatosCocina\platos\FrmPlatos.Designer.cs">
+      <DependentUpon>FrmPlatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="presentacion\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,6 +388,24 @@
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\pedidos\FrmPedidos.resx">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPlatosCocina\ingredientes\FrmAgregarIngrediente.resx">
+      <DependentUpon>FrmAgregarIngrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPlatosCocina\ingredientes\FrmEditarIngrediente.resx">
+      <DependentUpon>FrmEditarIngrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPlatosCocina\ingredientes\FrmIngredientes.resx">
+      <DependentUpon>FrmIngredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPlatosCocina\platos\FrmAgregarPlato.resx">
+      <DependentUpon>FrmAgregarPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPlatosCocina\platos\FrmEditarPlato.resx">
+      <DependentUpon>FrmEditarPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPlatosCocina\platos\FrmPlatos.resx">
+      <DependentUpon>FrmPlatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="presentacion\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,8 +435,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="common\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
