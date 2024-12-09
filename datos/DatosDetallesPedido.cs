@@ -87,7 +87,7 @@ namespace SistemaPolleria.datos
         {
             try
             {
-                using (SqlCommand cmd = new SqlCommand("eliminarPedidos", ConnectionString.Singleton.SqlConnectionFactory))
+                using (SqlCommand cmd = new SqlCommand("eliminarDetallesPedido", ConnectionString.Singleton.SqlConnectionFactory))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@DetallePedidoID", detallePedidoID);

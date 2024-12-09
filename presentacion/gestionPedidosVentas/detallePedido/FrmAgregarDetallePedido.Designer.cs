@@ -148,6 +148,7 @@
             this.btnGuardarDetallePedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardarDetallePedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardarDetallePedido.UseVisualStyleBackColor = false;
+            this.btnGuardarDetallePedido.Click += new System.EventHandler(this.btnGuardarDetallePedido_Click);
             // 
             // label2
             // 
@@ -224,6 +225,7 @@
             this.Name = "FrmAgregarDetallePedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarDetallePedido";
+            this.Load += new System.EventHandler(this.FrmAgregarDetallePedido_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

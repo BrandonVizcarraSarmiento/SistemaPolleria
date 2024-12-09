@@ -190,6 +190,7 @@
             this.btnEditarDetallePedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditarDetallePedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditarDetallePedido.UseVisualStyleBackColor = false;
+            this.btnEditarDetallePedido.Click += new System.EventHandler(this.btnEditarDetallePedido_Click);
             // 
             // label2
             // 
@@ -224,6 +225,7 @@
             this.Name = "FrmEditarDetallePedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEditarDetallePedido";
+            this.Load += new System.EventHandler(this.FrmEditarDetallePedido_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
