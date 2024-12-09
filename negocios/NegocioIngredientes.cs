@@ -83,5 +83,16 @@ namespace SistemaPolleria.Negocios.Ingredientes
 
             return _datosIngredientes.ObtenerIngredientePorNombre(nombreIngrediente);
         }
+        public DataRow ObtenerIngredientePorID(int ingredienteID)
+        {
+            // Aquí deberías realizar la lógica para obtener el ingrediente desde la base de datos
+            // Esto puede ser una llamada a un método en tu capa de datos que devuelva un DataTable
+            DataTable ingredientes = ObtenerTodosIngredientesN(); // Suponiendo que este método retorna todos los ingredientes
+
+            // Filtramos el DataTable para obtener el ingrediente específico
+            DataRow[] rows = ingredientes.Select($"IngredienteID = {ingredienteID}");
+
+            return rows.Length > 0 ? rows[0] : null; // Retornamos la primera fila que coincida o null si no se encontró
+        }
     }
 }
