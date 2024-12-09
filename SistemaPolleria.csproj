@@ -70,6 +70,7 @@
     <Compile Include="common\EntidadIngrediente.cs" />
     <Compile Include="common\EntidadMantenimientos.cs" />
     <Compile Include="common\EntidadMesas.cs" />
+    <Compile Include="common\EntidadMetodoPago.cs" />
     <Compile Include="common\EntidadOrdenesMesa.cs" />
     <Compile Include="common\EntidadPagos.cs" />
     <Compile Include="common\EntidadPedidos.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="datos\DatosIngredientes.cs" />
     <Compile Include="datos\DatosMantenimientos.cs" />
     <Compile Include="datos\DatosMesas.cs" />
+    <Compile Include="datos\DatosMetodoPago.cs" />
     <Compile Include="datos\DatosOrdenesMesa.cs" />
     <Compile Include="datos\DatosPagos.cs" />
     <Compile Include="datos\DatosPedidos.cs" />
@@ -99,6 +101,7 @@
     <Compile Include="negocios\NegocioEvalucion.cs" />
     <Compile Include="negocios\NegocioHorario.cs" />
     <Compile Include="negocios\NegocioIngredientes.cs" />
+    <Compile Include="negocios\NegocioMetodoPago.cs" />
     <Compile Include="negocios\NegocioPlatos.cs" />
     <Compile Include="negocios\NegociosAsistencia.cs" />
     <Compile Include="negocios\NegociosDetallesPedido.cs" />
@@ -239,11 +242,23 @@
     <Compile Include="presentacion\gestionEmpleados\turnos\FrmTurno.Designer.cs">
       <DependentUpon>FrmTurno.cs</DependentUpon>
     </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmAgregarDetallePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmAgregarDetallePedido.Designer.cs">
+      <DependentUpon>FrmAgregarDetallePedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.Designer.cs">
       <DependentUpon>FrmDetallePedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmEditarDetallePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmEditarDetallePedido.Designer.cs">
+      <DependentUpon>FrmEditarDetallePedido.cs</DependentUpon>
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\entregas\FrmEntregas.cs">
       <SubType>Form</SubType>
@@ -256,6 +271,18 @@
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\pagos\FrmPagos.Designer.cs">
       <DependentUpon>FrmPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\pedidos\FrmAgregarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\pedidos\FrmAgregarPedido.Designer.cs">
+      <DependentUpon>FrmAgregarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\pedidos\FrmEditarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionPedidosVentas\pedidos\FrmEditarPedido.Designer.cs">
+      <DependentUpon>FrmEditarPedido.cs</DependentUpon>
     </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\pedidos\FrmPedidos.cs">
       <SubType>Form</SubType>
@@ -376,14 +403,26 @@
     <EmbeddedResource Include="presentacion\gestionEmpleados\turnos\FrmTurno.resx">
       <DependentUpon>FrmTurno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmAgregarDetallePedido.resx">
+      <DependentUpon>FrmAgregarDetallePedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmDetallePedido.resx">
       <DependentUpon>FrmDetallePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmEditarDetallePedido.resx">
+      <DependentUpon>FrmEditarDetallePedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\entregas\FrmEntregas.resx">
       <DependentUpon>FrmEntregas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\pagos\FrmPagos.resx">
       <DependentUpon>FrmPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPedidosVentas\pedidos\FrmAgregarPedido.resx">
+      <DependentUpon>FrmAgregarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionPedidosVentas\pedidos\FrmEditarPedido.resx">
+      <DependentUpon>FrmEditarPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\pedidos\FrmPedidos.resx">
       <DependentUpon>FrmPedidos.cs</DependentUpon>

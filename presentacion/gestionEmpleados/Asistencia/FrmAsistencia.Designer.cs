@@ -36,12 +36,12 @@
             this.btnNuevoAsistencia = new FontAwesome.Sharp.IconButton();
             this.btnEditarAsistencia = new FontAwesome.Sharp.IconButton();
             this.btnEliminarAsistencia = new FontAwesome.Sharp.IconButton();
-            this.panelBuscarCargos = new System.Windows.Forms.Panel();
+            this.panelBuscar = new System.Windows.Forms.Panel();
             this.txtBuscarAsistencias = new System.Windows.Forms.TextBox();
             this.btnBuscarAsistencias = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencia)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panelBuscarCargos.SuspendLayout();
+            this.panelBuscar.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvAsistencia
@@ -172,15 +172,15 @@
             this.btnEliminarAsistencia.UseVisualStyleBackColor = false;
             this.btnEliminarAsistencia.Click += new System.EventHandler(this.btnEliminarAsistencia_Click);
             // 
-            // panelBuscarCargos
+            // panelBuscar
             // 
-            this.panelBuscarCargos.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panelBuscarCargos.Controls.Add(this.txtBuscarAsistencias);
-            this.panelBuscarCargos.Controls.Add(this.btnBuscarAsistencias);
-            this.panelBuscarCargos.Location = new System.Drawing.Point(231, 12);
-            this.panelBuscarCargos.Name = "panelBuscarCargos";
-            this.panelBuscarCargos.Size = new System.Drawing.Size(247, 47);
-            this.panelBuscarCargos.TabIndex = 28;
+            this.panelBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelBuscar.Controls.Add(this.txtBuscarAsistencias);
+            this.panelBuscar.Controls.Add(this.btnBuscarAsistencias);
+            this.panelBuscar.Location = new System.Drawing.Point(231, 12);
+            this.panelBuscar.Name = "panelBuscar";
+            this.panelBuscar.Size = new System.Drawing.Size(247, 47);
+            this.panelBuscar.TabIndex = 28;
             // 
             // txtBuscarAsistencias
             // 
@@ -216,7 +216,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 446);
-            this.Controls.Add(this.panelBuscarCargos);
+            this.Controls.Add(this.panelBuscar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dgvAsistencia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -225,8 +225,8 @@
             this.Load += new System.EventHandler(this.FrmAsistencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencia)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panelBuscarCargos.ResumeLayout(false);
-            this.panelBuscarCargos.PerformLayout();
+            this.panelBuscar.ResumeLayout(false);
+            this.panelBuscar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -238,7 +238,7 @@
         private FontAwesome.Sharp.IconButton btnNuevoAsistencia;
         private FontAwesome.Sharp.IconButton btnEditarAsistencia;
         private FontAwesome.Sharp.IconButton btnEliminarAsistencia;
-        private System.Windows.Forms.Panel panelBuscarCargos;
+        private System.Windows.Forms.Panel panelBuscar;
         private System.Windows.Forms.TextBox txtBuscarAsistencias;
         private FontAwesome.Sharp.IconButton btnBuscarAsistencias;
     }
