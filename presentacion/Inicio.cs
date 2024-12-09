@@ -6,11 +6,14 @@ using SistemaPolleria.presentacion.gestion_empleados.empleado;
 using SistemaPolleria.presentacion.gestion_empleados.evaluciones;
 using SistemaPolleria.presentacion.gestion_empleados.horarios;
 using SistemaPolleria.presentacion.gestion_empleados.turnos;
+using SistemaPolleria.presentacion.gestionclientes.clientes;
 using SistemaPolleria.presentacion.gestionPedidosVentas.detallePedido;
 using SistemaPolleria.presentacion.gestionPedidosVentas.entregas;
 using SistemaPolleria.presentacion.gestionPedidosVentas.pagos;
 using SistemaPolleria.presentacion.gestionPedidosVentas.pedidos;
 using SistemaPolleria.presentacion.gestionPlatosCocina.ingredientes;
+using SistemaPolleria.presentacion.gestionPlatosCocina.ingredientesporplato;
+using SistemaPolleria.presentacion.gestionPlatosCocina.inventario;
 using SistemaPolleria.presentacion.gestionPlatosCocina.platos;
 using System;
 using System.Collections.Generic;
@@ -275,6 +278,21 @@ namespace SistemaPolleria.presentacion
         private void btnIngredientes_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconButton)sender, new FrmIngredientes());
+        }
+
+        private void btnIngredientesPlato_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmIngredientesporPlato());
+        }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmInventario());
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmClientes());
         }
     }
 }

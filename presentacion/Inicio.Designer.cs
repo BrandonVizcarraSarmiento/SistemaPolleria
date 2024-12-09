@@ -555,6 +555,7 @@
             this.iconButton8.Tag = "";
             this.iconButton8.Text = "Clientes";
             this.iconButton8.UseVisualStyleBackColor = false;
+            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
             // 
             // btnGestionClientes
             // 
@@ -627,6 +628,7 @@
             this.btnInventario.Tag = "";
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = false;
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // btnIngredientesPlato
             // 
@@ -645,6 +647,7 @@
             this.btnIngredientesPlato.Tag = "";
             this.btnIngredientesPlato.Text = "Ingredientes Por Plato";
             this.btnIngredientesPlato.UseVisualStyleBackColor = false;
+            this.btnIngredientesPlato.Click += new System.EventHandler(this.btnIngredientesPlato_Click);
             // 
             // btnIngredientes
             // 
