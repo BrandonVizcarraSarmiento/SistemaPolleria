@@ -171,6 +171,7 @@
             this.btnMantenimiento.Tag = "";
             this.btnMantenimiento.Text = "Mantenimiento";
             this.btnMantenimiento.UseVisualStyleBackColor = false;
+            this.btnMantenimiento.Click += new System.EventHandler(this.btnMantenimiento_Click);
             // 
             // btnEquipos
             // 
@@ -189,6 +190,7 @@
             this.btnEquipos.Tag = "";
             this.btnEquipos.Text = "Equipos";
             this.btnEquipos.UseVisualStyleBackColor = false;
+            this.btnEquipos.Click += new System.EventHandler(this.btnEquipos_Click);
             // 
             // btnGestionEquipos
             // 

@@ -269,6 +269,30 @@
     <Compile Include="presentacion\gestionEmpleados\turnos\FrmTurno.Designer.cs">
       <DependentUpon>FrmTurno.cs</DependentUpon>
     </Compile>
+    <Compile Include="presentacion\gestionEquipos\equipos\FrmAgregarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionEquipos\equipos\FrmAgregarEquipo.Designer.cs">
+      <DependentUpon>FrmAgregarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionEquipos\equipos\FrmEditarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionEquipos\equipos\FrmEditarEquipo.Designer.cs">
+      <DependentUpon>FrmEditarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionEquipos\equipos\FrmEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionEquipos\equipos\FrmEquipo.Designer.cs">
+      <DependentUpon>FrmEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\gestionEquipos\mantenimiento\FrmMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\gestionEquipos\mantenimiento\FrmMantenimiento.Designer.cs">
+      <DependentUpon>FrmMantenimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="presentacion\gestionPedidosVentas\detallePedido\FrmAgregarDetallePedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -474,6 +498,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionEmpleados\turnos\FrmTurno.resx">
       <DependentUpon>FrmTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionEquipos\equipos\FrmAgregarEquipo.resx">
+      <DependentUpon>FrmAgregarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionEquipos\equipos\FrmEditarEquipo.resx">
+      <DependentUpon>FrmEditarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionEquipos\equipos\FrmEquipo.resx">
+      <DependentUpon>FrmEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\gestionEquipos\mantenimiento\FrmMantenimiento.resx">
+      <DependentUpon>FrmMantenimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presentacion\gestionPedidosVentas\detallePedido\FrmAgregarDetallePedido.resx">
       <DependentUpon>FrmAgregarDetallePedido.cs</DependentUpon>

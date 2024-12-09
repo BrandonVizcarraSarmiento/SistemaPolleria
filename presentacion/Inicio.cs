@@ -7,6 +7,8 @@ using SistemaPolleria.presentacion.gestion_empleados.evaluciones;
 using SistemaPolleria.presentacion.gestion_empleados.horarios;
 using SistemaPolleria.presentacion.gestion_empleados.turnos;
 using SistemaPolleria.presentacion.gestionclientes.clientes;
+using SistemaPolleria.presentacion.gestionEquipos.equipos;
+using SistemaPolleria.presentacion.gestionEquipos.mantenimiento;
 using SistemaPolleria.presentacion.gestionPedidosVentas.detallePedido;
 using SistemaPolleria.presentacion.gestionPedidosVentas.entregas;
 using SistemaPolleria.presentacion.gestionPedidosVentas.pagos;
@@ -293,6 +295,16 @@ namespace SistemaPolleria.presentacion
         private void iconButton8_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconButton)sender, new FrmClientes());
+        }
+
+        private void btnEquipos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmEquipo());
+        }
+
+        private void btnMantenimiento_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconButton)sender, new FrmMantenimiento());
         }
     }
 }
