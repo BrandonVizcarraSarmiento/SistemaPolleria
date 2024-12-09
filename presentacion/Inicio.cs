@@ -26,12 +26,49 @@ namespace SistemaPolleria.presentacion
     {
         private static IconButton MenuActivo = null;
         private static Form FormularioActivo = null;
-        public Inicio()
+        private string RolUsuario; // Variable para almacenar el rol del usuario
+        public Inicio(string rolUsuario)
         {
             InitializeComponent();
+            RolUsuario = rolUsuario;
             OcultarSubMenus();
+            ConfigurarSegunRol();
         }
+        private void ConfigurarSegunRol()
+        {
+            // Ejemplo de lógica para mostrar u ocultar botones/paneles según el rol
+            switch (RolUsuario)
+            {
+                case "Administrador":
+                    // Todos los botones están habilitados
+                    break;
 
+                case "Empleado":
+                    btnPedidosVentas.Visible = true;
+                    btnGestionEmpleados.Visible = false; // Ocultar funcionalidades de gestión
+                    btnCajaPagos.Visible = false;
+                    break;
+
+                case "Cajero":
+                    btnCajaPagos.Visible = true;
+                    btnPedidosVentas.Visible = false;
+                    btnGestionEmpleados.Visible = false;
+                    break;
+
+                case "Proveedor":
+                    btnComprasProveedores.Visible = true;
+                    // Ocultar botones no relevantes para el proveedor
+                    btnPedidosVentas.Visible = false;
+                    btnGestionEmpleados.Visible = false;
+                    btnCajaPagos.Visible = false;
+                    break;
+
+                default:
+                    MessageBox.Show("Rol no reconocido. Contacte al administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Application.Exit();
+                    break;
+            }
+        }
         private void btnMenu_Click(object sender, EventArgs e)
         {
             ContraerMenu();
@@ -221,6 +258,11 @@ namespace SistemaPolleria.presentacion
         private void btnPago_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconButton)sender, new FrmPago());
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

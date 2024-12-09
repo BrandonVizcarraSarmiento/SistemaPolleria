@@ -67,6 +67,7 @@
     <Compile Include="common\EntidadPagos.cs" />
     <Compile Include="common\EntidadPedidos.cs" />
     <Compile Include="common\EntidadTurno.cs" />
+    <Compile Include="common\EntidadUsuario.cs" />
     <Compile Include="datos\DatosAsistencia.cs" />
     <Compile Include="datos\DatosCaja.cs" />
     <Compile Include="datos\DatosEmpleado.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="datos\DatosPagos.cs" />
     <Compile Include="datos\DatosPedidos.cs" />
     <Compile Include="datos\DatosTurno.cs" />
+    <Compile Include="datos\DatosUsuarios.cs" />
     <Compile Include="negocios\NegocioCaja.cs" />
     <Compile Include="negocios\NegocioEvalucion.cs" />
     <Compile Include="negocios\NegocioHorario.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="negocios\NegociosEmpleado.cs" />
     <Compile Include="negocios\NegociosPagos.cs" />
     <Compile Include="negocios\NegociosPedidos.cs" />
+    <Compile Include="negocios\NegociosUsuarios.cs" />
     <Compile Include="negocios\NegocioTurno.cs" />
     <Compile Include="presentacion\cajaPagos\caja\FrmAgregarCaja.cs">
       <SubType>Form</SubType>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Configuration; // Para ConfigurationManager
+using System.Configuration;
 
 namespace SistemaPolleria.Common
 {
